@@ -1,7 +1,7 @@
 # QuanLyQuanCaPhe
 
-##Chuong trinh gom co : 9 Form 
-##Chu y : lam theo thu tu form da phan cong
+## Chuong trinh gom co : 9 Form 
+## Chu y : lam theo thu tu form da phan cong
                    
          
 ###  Hoang Minh Nhat 
