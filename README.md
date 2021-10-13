@@ -14,7 +14,7 @@
                        4.Quan ly ban an
                        5.Hoa don thanh toan
         
-### Do Quoc Viet
+### Nguyen Quoc Viet
                        6.Quan ly nhan vien
                        7.Quan ly nhap xuat nguyen lieu
        
