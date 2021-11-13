@@ -5,8 +5,8 @@
                    
          
 ###  Hoang Minh Nhat 
-                       1.Trang chu gioi thieu quan
-                       2.Dang nhap
+                       1.Dang nhap
+                       2.Trang chu gioi thieu quan
                        3.Quan Ly thong tin Food
                   
 ###  Vuong La Quoc Hoang
