@@ -10,25 +10,24 @@ using System.Windows.Forms;
 
 namespace QuanLyQuanCaPhe
 {
-    public partial class Form2b : Form
+    public partial class FormNNL : Form
     {
-        public Form2b()
+        public FormNNL()
         {
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Form6 f6 = new Form6();
-            Hide();
-            f6.ShowDialog();
+            tbID_phieunhap.Text = tbDongia.Text = tbNgaynhap.Text = tbSoluong.Text = tbID_NCC.Text = tbID_NV.Text = tbID_ThucPham.Text = "";
+            tbID_phieunhap.Focus();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form7 f7 = new Form7();
+            Form7 form7 = new Form7();
             Hide();
-            f7.ShowDialog();
+            form7.ShowDialog();
         }
     }
 }
