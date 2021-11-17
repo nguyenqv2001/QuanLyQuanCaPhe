@@ -125,6 +125,7 @@
     <Compile Include="FormThucPham.Designer.cs">
       <DependentUpon>FormThucPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="NhaCungCap.cs" />
     <Compile Include="NhanVien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

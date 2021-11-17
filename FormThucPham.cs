@@ -29,5 +29,10 @@ namespace QuanLyQuanCaPhe
             Hide();
             form7.ShowDialog();
         }
+
+        private void btThem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
