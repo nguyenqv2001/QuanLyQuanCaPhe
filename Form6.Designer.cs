@@ -29,10 +29,17 @@ namespace QuanLyQuanCaPhe
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // Form6
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form Quan Ly nhan vien";
+            this.Name = "Form6";
+            this.Text = "Form nhan vien";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
