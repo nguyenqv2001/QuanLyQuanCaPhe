@@ -34,6 +34,7 @@ namespace QuanLyQuanCaPhe
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@ namespace QuanLyQuanCaPhe
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -50,20 +50,21 @@ namespace QuanLyQuanCaPhe
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(-54, 40);
+            this.groupBox1.Location = new System.Drawing.Point(14, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1482, 134);
-            this.groupBox1.TabIndex = 4;
+            this.groupBox1.Size = new System.Drawing.Size(1429, 134);
+            this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(26, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 18);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(93, 81);
             this.pictureBox1.TabIndex = 4;
@@ -86,22 +87,30 @@ namespace QuanLyQuanCaPhe
             this.label1.TabIndex = 1;
             this.label1.Text = "Phần mềm quản lý quán cà phê";
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Location = new System.Drawing.Point(364, 168);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1079, 570);
+            this.groupBox3.TabIndex = 10;
+            this.groupBox3.TabStop = false;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button4);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Location = new System.Drawing.Point(-54, 180);
+            this.groupBox2.Location = new System.Drawing.Point(14, 168);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(337, 558);
-            this.groupBox2.TabIndex = 5;
+            this.groupBox2.Size = new System.Drawing.Size(344, 570);
+            this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(13, 437);
+            this.button4.Location = new System.Drawing.Point(6, 434);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(307, 115);
             this.button4.TabIndex = 3;
@@ -111,7 +120,7 @@ namespace QuanLyQuanCaPhe
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(13, 292);
+            this.button3.Location = new System.Drawing.Point(6, 295);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(307, 115);
             this.button3.TabIndex = 2;
@@ -121,7 +130,7 @@ namespace QuanLyQuanCaPhe
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(13, 157);
+            this.button2.Location = new System.Drawing.Point(6, 157);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(307, 115);
             this.button2.TabIndex = 1;
@@ -131,7 +140,7 @@ namespace QuanLyQuanCaPhe
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(13, 21);
+            this.button1.Location = new System.Drawing.Point(6, 21);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(307, 115);
             this.button1.TabIndex = 0;
@@ -141,10 +150,10 @@ namespace QuanLyQuanCaPhe
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Location = new System.Drawing.Point(-54, 744);
+            this.groupBox4.Location = new System.Drawing.Point(-52, 744);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1480, 80);
-            this.groupBox4.TabIndex = 7;
+            this.groupBox4.Size = new System.Drawing.Size(1480, 103);
+            this.groupBox4.TabIndex = 11;
             this.groupBox4.TabStop = false;
             // 
             // label2
@@ -158,25 +167,17 @@ namespace QuanLyQuanCaPhe
             this.label2.Text = "Titan coffee , địa chỉ  : quận 3 , thành phố HCM . Hotline : 0265236589  , email " +
     ": titancoffee@gmail.com";
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Location = new System.Drawing.Point(296, 180);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1131, 558);
-            this.groupBox3.TabIndex = 6;
-            this.groupBox3.TabStop = false;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1374, 864);
+            this.ClientSize = new System.Drawing.Size(1455, 861);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Form Trang chủ NV";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -193,6 +194,7 @@ namespace QuanLyQuanCaPhe
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
@@ -200,6 +202,5 @@ namespace QuanLyQuanCaPhe
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
