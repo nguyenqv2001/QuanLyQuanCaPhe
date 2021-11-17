@@ -16,5 +16,53 @@ namespace QuanLyQuanCaPhe
         {
             InitializeComponent();
         }
+
+        private void tìmKiếmKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TimKiemKhachHang tkkh = new TimKiemKhachHang();
+            tkkh.Show();
+        }
+
+        private void tìmKiếmMónĂnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TimKiemMonAn tkma = new TimKiemMonAn();
+            tkma.Show();
+
+        }
+
+        private void tìmKiếmThựcPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TimKiemThucPham tktp = new TimKiemThucPham();
+            tktp.Show();
+        }
+
+        private void thốngKêDoanhThuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongKeDoanhThu tkdt = new ThongKeDoanhThu();
+            tkdt.Show();
+        }
+
+        private void thốngKêThựcPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongKeThucPham tktp = new ThongKeThucPham();
+            tktp.Show();
+        }
+
+        private void tạoHóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TaoHoaDon thd = new TaoHoaDon();
+            thd.Show();
+        }
+
+        private void tạoHóaĐơnChiTiếtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            TaoHoaDonChiTiet thdct = new TaoHoaDonChiTiet();
+            thdct.Show();
+        }
+
+        private void Form8_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
