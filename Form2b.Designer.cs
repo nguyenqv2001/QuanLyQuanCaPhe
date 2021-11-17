@@ -211,7 +211,7 @@ namespace QuanLyQuanCaPhe
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form2b";
-            this.Text = "Form10";
+            this.Text = "Form Trang chủ QL";
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);

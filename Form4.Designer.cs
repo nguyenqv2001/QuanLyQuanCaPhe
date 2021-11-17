@@ -677,7 +677,7 @@ namespace QuanLyQuanCaPhe
             this.Controls.Add(this.Panel1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "Form Quản lý bàn ăn";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
