@@ -44,7 +44,7 @@
             this.panel1.Controls.Add(this.buttonTim);
             this.panel1.Controls.Add(this.radioButtonTen);
             this.panel1.Controls.Add(this.radioButtonID);
-            this.panel1.Location = new System.Drawing.Point(74, 30);
+            this.panel1.Location = new System.Drawing.Point(30, 51);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(741, 114);
             this.panel1.TabIndex = 2;
@@ -90,22 +90,22 @@
             // dataGridViewDuLieu
             // 
             this.dataGridViewDuLieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDuLieu.Location = new System.Drawing.Point(74, 170);
+            this.dataGridViewDuLieu.Location = new System.Drawing.Point(30, 208);
             this.dataGridViewDuLieu.Name = "dataGridViewDuLieu";
             this.dataGridViewDuLieu.RowTemplate.Height = 24;
             this.dataGridViewDuLieu.Size = new System.Drawing.Size(741, 375);
             this.dataGridViewDuLieu.TabIndex = 3;
-            this.dataGridViewDuLieu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDuLieu_CellContentClick);
             // 
             // TimKiemKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 578);
+            this.ClientSize = new System.Drawing.Size(800, 648);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridViewDuLieu);
             this.Name = "TimKiemKhachHang";
             this.Text = "TimKiemKhachHang";
+            this.Load += new System.EventHandler(this.TimKiemKhachHang_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDuLieu)).EndInit();

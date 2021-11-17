@@ -162,6 +162,7 @@
     <Compile Include="ThongKeThucPham.Designer.cs">
       <DependentUpon>ThongKeThucPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="THUCPHAM.cs" />
     <Compile Include="TimKiemKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>

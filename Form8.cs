@@ -19,8 +19,7 @@ namespace QuanLyQuanCaPhe
 
         private void tìmKiếmKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TimKiemKhachHang tkkh = new TimKiemKhachHang();
-            tkkh.Show();
+            
         }
 
         private void tìmKiếmMónĂnToolStripMenuItem_Click(object sender, EventArgs e)
@@ -63,6 +62,29 @@ namespace QuanLyQuanCaPhe
         private void Form8_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void tìmKiếmKháchHàngToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonTimKiemKhachHang_Click(object sender, EventArgs e)
+        {
+            TimKiemKhachHang tkkh = new TimKiemKhachHang();
+            tkkh.Show();
+        }
+
+        private void buttonTimKiemMonAn_Click(object sender, EventArgs e)
+        {
+            TimKiemMonAn tkma = new TimKiemMonAn();
+            tkma.Show();
+        }
+
+        private void buttonTimKiemThucPham_Click(object sender, EventArgs e)
+        {
+            TimKiemThucPham tktp = new TimKiemThucPham();
+            tktp.Show();
         }
     }
 }

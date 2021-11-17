@@ -16,5 +16,17 @@ namespace QuanLyQuanCaPhe
         {
             InitializeComponent();
         }
+
+        private void buttonThongKeDoanhThu_Click(object sender, EventArgs e)
+        {
+            ThongKeDoanhThu tkdt = new ThongKeDoanhThu();
+            tkdt.Show();
+        }
+
+        private void buttonThongKeThucPham_Click(object sender, EventArgs e)
+        {
+            ThongKeThucPham tktp = new ThongKeThucPham();
+            tktp.Show();
+        }
     }
 }
