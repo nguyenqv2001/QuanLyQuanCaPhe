@@ -136,6 +136,8 @@
     <Compile Include="NhaCungCap.cs" />
     <Compile Include="NhanVien.cs" />
     <Compile Include="NHANVIEN2.cs" />
+    <Compile Include="NhapNguyenLieu.cs" />
+    <Compile Include="NThucPham.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TaoHoaDon.cs">
