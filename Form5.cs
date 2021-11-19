@@ -16,5 +16,17 @@ namespace QuanLyQuanCaPhe
         {
             InitializeComponent();
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form2b f2b = new Form2b();
+            Hide();
+            f2b.ShowDialog();
+        }
     }
 }

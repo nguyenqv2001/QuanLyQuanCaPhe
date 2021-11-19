@@ -110,7 +110,7 @@ namespace QuanLyQuanCaPhe
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label1);
             this.Name = "Form7";
-            this.Text = "QUẢN LÝ NGUYÊN LIỆU";
+            this.Text = "Form quản lý nhập nguyên liệu";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -56,7 +56,7 @@ namespace QuanLyQuanCaPhe
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(14, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1429, 134);
+            this.groupBox1.Size = new System.Drawing.Size(1429, 150);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
@@ -89,9 +89,10 @@ namespace QuanLyQuanCaPhe
             // 
             // groupBox3
             // 
-            this.groupBox3.Location = new System.Drawing.Point(364, 168);
+            this.groupBox3.BackgroundImage = global::QuanLyQuanCaPhe.Properties.Resources.anhQuan;
+            this.groupBox3.Location = new System.Drawing.Point(448, 168);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1079, 570);
+            this.groupBox3.Size = new System.Drawing.Size(995, 554);
             this.groupBox3.TabIndex = 10;
             this.groupBox3.TabStop = false;
             // 
@@ -103,7 +104,7 @@ namespace QuanLyQuanCaPhe
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Location = new System.Drawing.Point(14, 168);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(344, 570);
+            this.groupBox2.Size = new System.Drawing.Size(409, 570);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             // 
@@ -116,6 +117,7 @@ namespace QuanLyQuanCaPhe
             this.button4.TabIndex = 3;
             this.button4.Text = "Hỗ trợ tìm kiếm";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -126,6 +128,7 @@ namespace QuanLyQuanCaPhe
             this.button3.TabIndex = 2;
             this.button3.Text = "Hóa đơn thanh toán";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -136,6 +139,7 @@ namespace QuanLyQuanCaPhe
             this.button2.TabIndex = 1;
             this.button2.Text = "Quản lý bàn ăn";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -146,13 +150,14 @@ namespace QuanLyQuanCaPhe
             this.button1.TabIndex = 0;
             this.button1.Text = "Quản lý thông tin Menu";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Location = new System.Drawing.Point(-52, 744);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1480, 103);
+            this.groupBox4.Size = new System.Drawing.Size(1495, 103);
             this.groupBox4.TabIndex = 11;
             this.groupBox4.TabStop = false;
             // 

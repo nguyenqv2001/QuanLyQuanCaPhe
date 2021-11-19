@@ -314,7 +314,7 @@ namespace QuanLyQuanCaPhe
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form6";
-            this.Text = "QUẢN LÝ NHÂN VIÊN";
+            this.Text = "Form quản lý nhân viên";
             this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNV)).EndInit();

@@ -16,5 +16,12 @@ namespace QuanLyQuanCaPhe
         {
             InitializeComponent();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form2b f2b = new Form2b();
+            Hide();
+            f2b.ShowDialog();
+        }
     }
 }

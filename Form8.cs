@@ -86,5 +86,12 @@ namespace QuanLyQuanCaPhe
             TimKiemThucPham tktp = new TimKiemThucPham();
             tktp.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2b f2b = new Form2b();
+            Hide();
+            f2b.ShowDialog();
+        }
     }
 }

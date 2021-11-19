@@ -95,16 +95,18 @@ namespace QuanLyQuanCaPhe
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(732, 319);
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(732, 303);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(340, 22);
+            this.textBox2.Size = new System.Drawing.Size(340, 38);
             this.textBox2.TabIndex = 10;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(732, 248);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(732, 235);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(340, 22);
+            this.textBox1.Size = new System.Drawing.Size(340, 38);
             this.textBox1.TabIndex = 9;
             // 
             // button2
@@ -169,12 +171,13 @@ namespace QuanLyQuanCaPhe
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImage = global::QuanLyQuanCaPhe.Properties.Resources.iconquancaphe;
             this.pictureBox1.Enabled = false;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(136, 169);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(225, 230);
+            this.pictureBox1.Size = new System.Drawing.Size(232, 230);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 

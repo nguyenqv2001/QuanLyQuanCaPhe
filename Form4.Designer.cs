@@ -82,6 +82,7 @@ namespace QuanLyQuanCaPhe
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -281,7 +282,7 @@ namespace QuanLyQuanCaPhe
             // 
             // button27
             // 
-            this.button27.Location = new System.Drawing.Point(1477, 772);
+            this.button27.Location = new System.Drawing.Point(1222, 771);
             this.button27.Margin = new System.Windows.Forms.Padding(4);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(192, 59);
@@ -291,7 +292,7 @@ namespace QuanLyQuanCaPhe
             // 
             // button26
             // 
-            this.button26.Location = new System.Drawing.Point(1108, 772);
+            this.button26.Location = new System.Drawing.Point(968, 771);
             this.button26.Margin = new System.Windows.Forms.Padding(4);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(192, 59);
@@ -657,11 +658,23 @@ namespace QuanLyQuanCaPhe
             this.button24.Text = "BÀN 24";
             this.button24.UseVisualStyleBackColor = true;
             // 
+            // button28
+            // 
+            this.button28.Location = new System.Drawing.Point(1477, 771);
+            this.button28.Margin = new System.Windows.Forms.Padding(4);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(192, 59);
+            this.button28.TabIndex = 130;
+            this.button28.Text = "Thoát";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1689, 838);
+            this.Controls.Add(this.button28);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button30);
@@ -743,5 +756,6 @@ namespace QuanLyQuanCaPhe
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button28;
     }
 }
