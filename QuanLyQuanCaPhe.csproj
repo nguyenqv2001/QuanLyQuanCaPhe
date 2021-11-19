@@ -275,5 +275,11 @@
   <ItemGroup>
     <None Include="bin\Debug\iconquancaphe.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="image\iconquancaphe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\anhQuan.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

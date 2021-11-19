@@ -171,7 +171,7 @@ namespace QuanLyQuanCaPhe
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::QuanLyQuanCaPhe.Properties.Resources.iconquancaphe;
+            this.pictureBox1.BackgroundImage = global::QuanLyQuanCaPhe.Properties.Resources.iconquancaphe1;
             this.pictureBox1.Enabled = false;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));

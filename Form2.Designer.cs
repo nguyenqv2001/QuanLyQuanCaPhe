@@ -89,7 +89,7 @@ namespace QuanLyQuanCaPhe
             // 
             // groupBox3
             // 
-            this.groupBox3.BackgroundImage = global::QuanLyQuanCaPhe.Properties.Resources.anhQuan;
+            this.groupBox3.BackgroundImage = global::QuanLyQuanCaPhe.Properties.Resources.anhQuan1;
             this.groupBox3.Location = new System.Drawing.Point(448, 168);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(995, 554);

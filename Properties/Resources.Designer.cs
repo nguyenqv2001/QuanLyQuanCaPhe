@@ -73,6 +73,26 @@ namespace QuanLyQuanCaPhe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap anhQuan1 {
+            get {
+                object obj = ResourceManager.GetObject("anhQuan1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap anhQuan2 {
+            get {
+                object obj = ResourceManager.GetObject("anhQuan2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap anhQuanCaPhe {
             get {
                 object obj = ResourceManager.GetObject("anhQuanCaPhe", resourceCulture);
@@ -86,6 +106,16 @@ namespace QuanLyQuanCaPhe.Properties {
         internal static System.Drawing.Bitmap iconquancaphe {
             get {
                 object obj = ResourceManager.GetObject("iconquancaphe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconquancaphe1 {
+            get {
+                object obj = ResourceManager.GetObject("iconquancaphe1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
