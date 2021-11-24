@@ -12,15 +12,15 @@ namespace QuanLyQuanCaPhe
 {
     public partial class Form6 : Form
     {
-        NhanVien nhanvien;
+        NhanVienBLL nv;
         public Form6()
         {
             InitializeComponent();
-            nhanvien = new NhanVien();
+            nv = new NhanVienBLL();
         }
         public void ShowAllNHANVIEN()
         {
-            DataTable dt = nhanvien.getAllNHANVIEN();
+            DataTable dt = nv.getAllNHANVIEN();
             dataGridView1.DataSource = dt;
         }
         public bool CheckData()
@@ -85,7 +85,7 @@ namespace QuanLyQuanCaPhe
                 }
                 else { nhanvien.hinhAnh = tbLink.Text; }
 
-                if (nhanvien.InsertNHANVIEN(nhanvien))
+                if (nv.InsertNHANVIEN(nhanvien))
                 {
                     ShowAllNHANVIEN();
                 }
@@ -100,7 +100,7 @@ namespace QuanLyQuanCaPhe
             {
                 NhanVien nhanvien = new NhanVien();
                 nhanvien.maNV = tbID.Text;
-                if (nhanvien.DeleteNHANVIEN(nhanvien))
+                if (nv.DeleteNHANVIEN(nhanvien))
                 {
                     tbID.Text = tbTen.Text = tbDiachi.Text = tbSdt.Text = tbChucvu.Text = picNV.ImageLocation = tbLink.Text = "";
                     ShowAllNHANVIEN();
@@ -128,7 +128,7 @@ namespace QuanLyQuanCaPhe
 
                 }
                 else { nhanvien.hinhAnh = tbLink.Text; }
-                if (nhanvien.UpdateNHANVIEN(nhanvien))
+                if (nv.UpdateNHANVIEN(nhanvien))
                 {
                     ShowAllNHANVIEN();
                 }

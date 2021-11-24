@@ -50,6 +50,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(745, 98);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // radioButtonNCC
             // 
@@ -105,6 +106,7 @@
             this.dataGridViewDuLieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDuLieu.Location = new System.Drawing.Point(28, 164);
             this.dataGridViewDuLieu.Name = "dataGridViewDuLieu";
+            this.dataGridViewDuLieu.RowHeadersWidth = 51;
             this.dataGridViewDuLieu.RowTemplate.Height = 24;
             this.dataGridViewDuLieu.Size = new System.Drawing.Size(745, 332);
             this.dataGridViewDuLieu.TabIndex = 3;

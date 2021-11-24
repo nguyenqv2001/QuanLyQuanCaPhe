@@ -18,7 +18,7 @@ namespace QuanLyQuanCaPhe
             InitializeComponent();
         }
 
-        THUCPHAM tp = new THUCPHAM();
+        THUCPHAM2 tp = new THUCPHAM2();
 
         private void buttonCheck_Click(object sender, EventArgs e)
         {
@@ -49,6 +49,11 @@ namespace QuanLyQuanCaPhe
         }
 
         private void TimKiemThucPham_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

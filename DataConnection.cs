@@ -11,7 +11,7 @@ namespace QuanLyQuanCaPhe
         string conStr;
         public DataConnection()
         {
-            conStr = "Data Source=DESKTOP-6V6IGLT\\SQLEXPRESS;Initial Catalog=QuanLyQuanCaPhe1;Integrated Security=True";
+            conStr = "Data Source=msi;Initial Catalog=QuanLyQuanCaPhe1;Integrated Security=True";
 
         }
         public SqlConnection GetConnection()

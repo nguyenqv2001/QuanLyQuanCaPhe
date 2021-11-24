@@ -12,15 +12,15 @@ namespace QuanLyQuanCaPhe
 {
     public partial class FormNNL : Form
     {
-        NhapNguyenLieu nl;
+        NhapNguyenLieuBLL nlbll;
         public FormNNL()
         {
             InitializeComponent();
-            nl = new NhapNguyenLieu();
+            nlbll = new NhapNguyenLieuBLL();
         }
         public void ShowAllNNL()
         {
-            DataTable dt = nl.getAllNNL();
+            DataTable dt = nlbll.getAllNNL();
             dataGridView1.DataSource = dt;
         }
         public bool CheckData()
@@ -100,7 +100,7 @@ namespace QuanLyQuanCaPhe
                 nl.ngaynhap = DateTime.Parse(tbNgaynhap.Text);
 
 
-                if (nl.InsertNNLCT(nl) && nl.InsertNNL(nl))
+                if (nlbll.InsertNNLCT(nl) && nlbll.InsertNNL(nl))
                 {
                     tbID_phieunhap.Text = tbDongia.Text = tbNgaynhap.Text = tbSoluong.Text = tbID_NCC.Text = tbID_NV.Text = tbID_ThucPham.Text = tbTong.Text = "";
                     ShowAllNNL();
@@ -125,7 +125,7 @@ namespace QuanLyQuanCaPhe
                 nl.ngaynhap = DateTime.Parse(tbNgaynhap.Text);
 
 
-                if (nl.UpdateNNL(nl) && nl.UpdateNNLCT(nl))
+                if (nlbll.UpdateNNL(nl) && nlbll.UpdateNNLCT(nl))
                 {
                     tbID_phieunhap.Text = tbDongia.Text = tbNgaynhap.Text = tbSoluong.Text = tbID_NCC.Text = tbID_NV.Text = tbID_ThucPham.Text = tbTong.Text = "";
                     ShowAllNNL();
@@ -183,7 +183,7 @@ namespace QuanLyQuanCaPhe
             {
                 NhapNguyenLieu nl = new NhapNguyenLieu();
                 nl.maPN = int.Parse(tbID_phieunhap.Text);
-                if (nl.DeleteNNL(nl) && nl.DeleteNNLCT(nl))
+                if (nlbll.DeleteNNL(nl) && nlbll.DeleteNNLCT(nl))
                 {
                     tbID_phieunhap.Text = tbDongia.Text = tbNgaynhap.Text = tbSoluong.Text = tbID_NCC.Text = tbID_NV.Text = tbID_ThucPham.Text = tbTong.Text = "";
                     ShowAllNNL();

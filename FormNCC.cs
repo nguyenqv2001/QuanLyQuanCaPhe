@@ -12,16 +12,16 @@ namespace QuanLyQuanCaPhe
 {
     public partial class FormNCC : Form
     {
-        NhaCungCap ncc;
+        NhaCungCapBLL nccbll;
         public FormNCC()
         {
             InitializeComponent();
-            ncc = new NhaCungCap();
+            nccbll = new NhaCungCapBLL();
         }
 
         public void ShowAllNCC()
         {
-            DataTable dt = ncc.getAllNCC();
+            DataTable dt = nccbll.getAllNCC();
             dataGridView1.DataSource = dt;
         }
         public bool CheckData()
@@ -92,7 +92,7 @@ namespace QuanLyQuanCaPhe
                 }
                 else { ncc.hinhAnh = tbLink.Text; }
 
-                if (ncc.InsertNCC(ncc))
+                if (nccbll.InsertNCC(ncc))
                 {
                     ShowAllNCC();
                 }
@@ -107,7 +107,7 @@ namespace QuanLyQuanCaPhe
             {
                 NhaCungCap ncc = new NhaCungCap();
                 ncc.maNCC = tbID.Text;
-                if (ncc.DeleteNCC(ncc))
+                if (nccbll.DeleteNCC(ncc))
                 {
                     tbID.Text = tbTen.Text = tbDiachi.Text = tbSDT.Text = picNcc.ImageLocation = tbLink.Text = "";
                     ShowAllNCC();
@@ -135,7 +135,7 @@ namespace QuanLyQuanCaPhe
                 }
                 else { ncc.hinhAnh = tbLink.Text; }
 
-                if (ncc.UpdateNCC(ncc))
+                if (nccbll.UpdateNCC(ncc))
                 {
                     ShowAllNCC();
                 }

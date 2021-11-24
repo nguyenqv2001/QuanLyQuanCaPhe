@@ -12,15 +12,15 @@ namespace QuanLyQuanCaPhe
 {
     public partial class FormThucPham : Form
     {
-        NThucPham tp;
+        ThucPhamBLL tpbll;
         public FormThucPham()
         {
             InitializeComponent();
-            tp = new NThucPham();
+            tpbll = new ThucPhamBLL();
         }
         public void ShowAllTP()
         {
-            DataTable dt = tp.getAllTP();
+            DataTable dt = tpbll.getAllTP();
             dataGridView1.DataSource = dt;
         }
         public bool CheckData()
@@ -78,7 +78,7 @@ namespace QuanLyQuanCaPhe
         {
             if (CheckData())
             {
-                NThucPham tp = new NThucPham();
+                ThucPham tp = new ThucPham();
 
                 tp.maTP = tbID.Text;
                 tp.tenTP = tbTen.Text;
@@ -87,7 +87,7 @@ namespace QuanLyQuanCaPhe
                 tp.HSD = DateTime.Parse(tbHSD.Text);
                 tp.maNCC = tbID_NCC.Text;
 
-                if (tp.InsertTP(tp))
+                if (tpbll.InsertTP(tp))
                 {
                     ShowAllTP();
                 }
@@ -107,7 +107,7 @@ namespace QuanLyQuanCaPhe
         {
             if (CheckData())
             {
-                NThucPham tp = new NThucPham();
+                ThucPham tp = new ThucPham();
 
                 tp.maTP = tbID.Text;
                 tp.tenTP = tbTen.Text;
@@ -116,7 +116,7 @@ namespace QuanLyQuanCaPhe
                 tp.HSD = DateTime.Parse(tbHSD.Text);
                 tp.maNCC = tbID_NCC.Text;
 
-                if (tp.UpdateTP(tp))
+                if (tpbll.UpdateTP(tp))
                 {
                     ShowAllTP();
                 }
@@ -167,9 +167,9 @@ namespace QuanLyQuanCaPhe
         {
             if (MessageBox.Show("Bạn có muốn xóa không ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                NThucPham tp = new NThucPham();
+                ThucPham tp = new ThucPham();
                 tp.maTP = tbID.Text;
-                if (tp.DeleteTP(tp))
+                if (tpbll.DeleteTP(tp))
                 {
                     tbID.Text = tbTen.Text = tbNSX.Text = tbHSD.Text = tbDonvi.Text = tbID_NCC.Text = "";
                     ShowAllTP();

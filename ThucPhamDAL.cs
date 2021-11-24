@@ -5,22 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-
 namespace QuanLyQuanCaPhe
 {
-    class NThucPham
+    class ThucPhamDAL
     {
         DataConnection dc;
         SqlDataAdapter da;
         SqlCommand cmd;
-        public string maTP { set; get; }
-        public string tenTP { set; get; }
-        public string maNCC { set; get; }
-        public string DVT { set; get; }
-        public DateTime NSX { set; get; }
-        public DateTime HSD { set; get; }
-
-        public NThucPham()
+        public ThucPhamDAL()
         {
             dc = new DataConnection();
         }
@@ -36,7 +28,7 @@ namespace QuanLyQuanCaPhe
             con.Close();
             return dt;
         }
-        public bool InsertTP(NThucPham tp)
+        public bool InsertTP(ThucPham tp)
         {
             string sql = "INSERT INTO ThucPham(maThucPham,tenThucPham,donViTinh,NSX,HSD,maNCC) VALUES(@maThucPham, @tenThucPham, @donViTinh, @NSX,  @HSD, @maNCC)";
             SqlConnection con = dc.GetConnection();
@@ -60,7 +52,7 @@ namespace QuanLyQuanCaPhe
             }
             return true;
         }
-        public bool UpdateTP(NThucPham tp)
+        public bool UpdateTP(ThucPham tp)
         {
             string sql = "UPDATE ThucPham SET tenThucPham = @tenThucPham, donViTinh = @donViTinh, NSX = @NSX, HSD = @HSD, maNCC = @maNCC WHERE maThucPham = @maThucPham";
             SqlConnection con = dc.GetConnection();
@@ -84,7 +76,7 @@ namespace QuanLyQuanCaPhe
             }
             return true;
         }
-        public bool DeleteTP(NThucPham tp)
+        public bool DeleteTP(ThucPham tp)
         {
             string sql = "DELETE ThucPham WHERE maThucPham= @maThucPham";
             SqlConnection con = dc.GetConnection();
@@ -102,6 +94,5 @@ namespace QuanLyQuanCaPhe
             }
             return true;
         }
-
     }
 }
