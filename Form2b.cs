@@ -65,5 +65,12 @@ namespace QuanLyQuanCaPhe
             Hide();
             f8.ShowDialog();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            Hide();
+            f1.ShowDialog();
+        }
     }
 }

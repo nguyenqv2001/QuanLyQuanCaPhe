@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewThongKeThucPhamBanChay = new System.Windows.Forms.DataGridView();
             this.chartThongKeThucPhamBanChay = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -59,19 +59,20 @@
             this.dataGridViewThongKeThucPhamBanChay.RowTemplate.Height = 24;
             this.dataGridViewThongKeThucPhamBanChay.Size = new System.Drawing.Size(724, 245);
             this.dataGridViewThongKeThucPhamBanChay.TabIndex = 4;
+            this.dataGridViewThongKeThucPhamBanChay.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewThongKeThucPhamBanChay_CellContentClick);
             // 
             // chartThongKeThucPhamBanChay
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartThongKeThucPhamBanChay.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartThongKeThucPhamBanChay.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chartThongKeThucPhamBanChay.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartThongKeThucPhamBanChay.Legends.Add(legend1);
             this.chartThongKeThucPhamBanChay.Location = new System.Drawing.Point(42, 23);
             this.chartThongKeThucPhamBanChay.Name = "chartThongKeThucPhamBanChay";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Thống Kê Thực Phẩm Bán Chạy";
-            this.chartThongKeThucPhamBanChay.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Thống Kê Thực Phẩm Bán Chạy";
+            this.chartThongKeThucPhamBanChay.Series.Add(series1);
             this.chartThongKeThucPhamBanChay.Size = new System.Drawing.Size(724, 300);
             this.chartThongKeThucPhamBanChay.TabIndex = 3;
             this.chartThongKeThucPhamBanChay.Text = "chart1";

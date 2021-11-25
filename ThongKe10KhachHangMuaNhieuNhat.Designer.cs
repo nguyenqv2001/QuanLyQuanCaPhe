@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.dataGridViewThongKe10KhachHang = new System.Windows.Forms.DataGridView();
             this.chartThongKe10KhachHang = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button1 = new System.Windows.Forms.Button();
@@ -50,20 +50,21 @@
             this.dataGridViewThongKe10KhachHang.RowTemplate.Height = 24;
             this.dataGridViewThongKe10KhachHang.Size = new System.Drawing.Size(717, 247);
             this.dataGridViewThongKe10KhachHang.TabIndex = 6;
+            this.dataGridViewThongKe10KhachHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewThongKe10KhachHang_CellContentClick);
             // 
             // chartThongKe10KhachHang
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartThongKe10KhachHang.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartThongKe10KhachHang.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chartThongKe10KhachHang.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartThongKe10KhachHang.Legends.Add(legend1);
             this.chartThongKe10KhachHang.Location = new System.Drawing.Point(42, 66);
             this.chartThongKe10KhachHang.Name = "chartThongKe10KhachHang";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
-            series2.Legend = "Legend1";
-            series2.Name = "Thống Kê Khách Hàng";
-            this.chartThongKe10KhachHang.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series1.Legend = "Legend1";
+            series1.Name = "Thống Kê Khách Hàng";
+            this.chartThongKe10KhachHang.Series.Add(series1);
             this.chartThongKe10KhachHang.Size = new System.Drawing.Size(717, 320);
             this.chartThongKe10KhachHang.TabIndex = 5;
             this.chartThongKe10KhachHang.Text = "chart1";

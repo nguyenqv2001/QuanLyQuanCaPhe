@@ -20,7 +20,7 @@ namespace QuanLyQuanCaPhe
         KHACHHANG kh = new KHACHHANG();
         private void ThongKe10KhachHangMuaNhieuNhat_Load(object sender, EventArgs e)
         {
-            SqlCommand command = new SqlCommand("select top 10 * from (select tenKH, count(PYC.maKH) as soLuong from KhachHang as KH join PhieuYeuCau as PYC on KH.maKH = PYC.maKH group by tenKH) ThongKeKhachHang order by soLuong desc");
+            SqlCommand command = new SqlCommand("select top 10 * from (select tenKH, count(PYC.MaPhieuYeuCau) as soLuong from KhachHang as KH join PhieuYeuCau as PYC on KH.maKH = PYC.maKH group by tenKH )ThongKeKhachHang  order by soLuong desc");
             dataGridViewThongKe10KhachHang.ReadOnly = true;
             dataGridViewThongKe10KhachHang.RowTemplate.Height = 80;
             dataGridViewThongKe10KhachHang.DataSource = kh.getKhachHang(command);
@@ -52,6 +52,11 @@ namespace QuanLyQuanCaPhe
             Form9 f9 = new Form9();
             Hide();
             f9.Show();
+        }
+
+        private void dataGridViewThongKe10KhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

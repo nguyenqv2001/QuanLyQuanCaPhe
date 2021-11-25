@@ -28,7 +28,7 @@ namespace QuanLyQuanCaPhe
         }
         public void ShowAllHD()
         {
-            string sql = "SELECT * FROM HOADONTHANHTOAN";
+            string sql = "SELECT * FROM THONGKEBANHANG";
             dc = new DataConnection();
             SqlConnection con = dc.GetConnection();
             da = new SqlDataAdapter(sql, con);
@@ -61,7 +61,7 @@ namespace QuanLyQuanCaPhe
         {
             string MaKhachHang = tbKH.Text;
 
-            string sql = "SELECT * FROM HOADONTHANHTOAN WHERE maKH LIKE '%" + MaKhachHang + "%'";
+            string sql = "SELECT * FROM THONGKEBANHANG WHERE maKH LIKE '%" + MaKhachHang + "%'";
             dc = new DataConnection();
             SqlConnection con = dc.GetConnection();
             da = new SqlDataAdapter(sql, con);
@@ -84,7 +84,7 @@ namespace QuanLyQuanCaPhe
             string MaKhachHang = tbKH.Text;
             int MaHD = int.Parse(tbHD.Text);
             dc = new DataConnection();
-            string sql = "SELECT * FROM HOADONTHANHTOAN WHERE maKH LIKE '%" + MaKhachHang + "%' and maPhieuYeuCau LIKE '%" + MaHD + "%' ";
+            string sql = "SELECT * FROM THONGKEBANHANG WHERE maKH LIKE '%" + MaKhachHang + "%' and maPhieuYeuCau LIKE '%" + MaHD + "%' ";
             SqlConnection con = dc.GetConnection();
             da = new SqlDataAdapter(sql, con);
             con.Open();

@@ -27,7 +27,7 @@ namespace QuanLyQuanCaPhe
 
         private void ThongKeThucPham_Load(object sender, EventArgs e)
         {
-            SqlCommand command = new SqlCommand("select top 10 * from (select tenMon, sum(soLuongMon) as soLuong from PhieuThanhToan group by tenMon) ThongKeMonAn order by soLuong desc");
+            SqlCommand command = new SqlCommand("select top 10 * from (select tenMon, sum(soLuongMon) as soLuong from THONGKEBANHANG group by tenMon) ThongKeMonAn order by soLuong desc");
             dataGridViewThongKeThucPhamBanChay.ReadOnly = true;
             dataGridViewThongKeThucPhamBanChay.RowTemplate.Height = 80;
             dataGridViewThongKeThucPhamBanChay.DataSource = tp.getThucPham(command);
@@ -54,6 +54,11 @@ namespace QuanLyQuanCaPhe
             Form9 f9 = new Form9();
             Hide();
             f9.Show();
+        }
+
+        private void dataGridViewThongKeThucPhamBanChay_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

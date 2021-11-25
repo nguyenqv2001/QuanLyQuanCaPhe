@@ -224,6 +224,7 @@ namespace QuanLyQuanCaPhe
             this.picNV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picNV.TabIndex = 129;
             this.picNV.TabStop = false;
+            this.picNV.Click += new System.EventHandler(this.picNV_Click);
             // 
             // label7
             // 

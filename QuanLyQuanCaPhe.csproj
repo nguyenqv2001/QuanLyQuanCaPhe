@@ -49,6 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BAN.cs" />
+    <Compile Include="QUANLYMONAN.cs" />
+    <Compile Include="QuanLyThongTinMonAnDAL.cs" />
+    <Compile Include="QuanLyThongTinMonAnBLL.cs" />
+    <Compile Include="LOGIN.cs" />
     <Compile Include="DataConnection.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

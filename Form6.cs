@@ -210,5 +210,10 @@ namespace QuanLyQuanCaPhe
             Hide();
             f2b.ShowDialog();
         }
+
+        private void picNV_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
