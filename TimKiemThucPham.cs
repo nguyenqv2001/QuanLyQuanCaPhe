@@ -57,5 +57,33 @@ namespace QuanLyQuanCaPhe
         {
 
         }
+
+        private void buttonCheck_Click_1(object sender, EventArgs e)
+        {
+            if (radioButtonID.Checked)
+            {
+                string idThucPham = textBoxDuLieu.Text;
+                SqlCommand command = new SqlCommand("SELECT maThucPham, tenThucPham, donViTinh, NSX, HSD," +
+                    " maNCC FROM ThucPham WHERE maThucPham LIKE '%" + idThucPham + "%'");
+
+                dataGridViewDuLieu.DataSource = tp.getThucPham(command);
+            }
+            else if (radioButtonTen.Checked)
+            {
+                string tenThucPham = textBoxDuLieu.Text;
+                SqlCommand command = new SqlCommand("SELECT maThucPham, tenThucPham, donViTinh, NSX, HSD," +
+                    " maNCC FROM ThucPham WHERE tenThucPham LIKE '%" + tenThucPham + "%'");
+
+                dataGridViewDuLieu.DataSource = tp.getThucPham(command);
+            }
+            else if (radioButtonNCC.Checked)
+            {
+                string maNCC = textBoxDuLieu.Text;
+                SqlCommand command = new SqlCommand("SELECT maThucPham, tenThucPham, donViTinh, NSX, HSD," +
+                    " maNCC FROM ThucPham WHERE maNCC LIKE '%" + maNCC + "%'");
+
+                dataGridViewDuLieu.DataSource = tp.getThucPham(command);
+            }
+        }
     }
 }

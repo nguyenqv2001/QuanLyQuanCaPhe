@@ -19,8 +19,8 @@ namespace QuanLyQuanCaPhe
 
         private void buttonThongKeDoanhThu_Click(object sender, EventArgs e)
         {
-            ThongKeDoanhThu tkdt = new ThongKeDoanhThu();
-            tkdt.Show();
+            ThongKe10KhachHangMuaNhieuNhat tk10khmnn = new ThongKe10KhachHangMuaNhieuNhat();
+            tk10khmnn.Show();
         }
 
         private void buttonThongKeThucPham_Click(object sender, EventArgs e)
@@ -34,6 +34,12 @@ namespace QuanLyQuanCaPhe
             Form2b f2b = new Form2b();
             Hide();
             f2b.ShowDialog();
+        }
+
+        private void buttonThongKeDoanhThuTheoNgay_Click(object sender, EventArgs e)
+        {
+            ThongKeDoanhThuTheoNgay tkdttn = new ThongKeDoanhThuTheoNgay();
+            tkdttn.Show();
         }
     }
 }

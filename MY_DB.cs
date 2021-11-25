@@ -10,7 +10,7 @@ namespace QuanLyQuanCaPhe
 {
     class MY_DB
     {
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-B9OBG7V\SQLEXPRESS;Initial Catalog=QLCF;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-B9OBG7V\SQLEXPRESS;Initial Catalog=QuanLyQuanCaPhe2;Integrated Security=True");
 
         // get the connection
         public SqlConnection getConnection

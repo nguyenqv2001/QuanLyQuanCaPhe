@@ -143,6 +143,12 @@
     <Compile Include="NhapNguyenLieu.cs" />
     <Compile Include="NhapNguyenLieuBLL.cs" />
     <Compile Include="NhapNguyenLieuDAL.cs" />
+    <Compile Include="ThongKe10KhachHangMuaNhieuNhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe10KhachHangMuaNhieuNhat.Designer.cs">
+      <DependentUpon>ThongKe10KhachHangMuaNhieuNhat.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThucPham.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -158,11 +164,11 @@
     <Compile Include="TaoHoaDonChiTiet.Designer.cs">
       <DependentUpon>TaoHoaDonChiTiet.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThongKeDoanhThu.cs">
+    <Compile Include="ThongKeDoanhThuTheoNgay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ThongKeDoanhThu.Designer.cs">
-      <DependentUpon>ThongKeDoanhThu.cs</DependentUpon>
+    <Compile Include="ThongKeDoanhThuTheoNgay.Designer.cs">
+      <DependentUpon>ThongKeDoanhThuTheoNgay.cs</DependentUpon>
     </Compile>
     <Compile Include="ThongKeThucPham.cs">
       <SubType>Form</SubType>
@@ -184,6 +190,12 @@
     </Compile>
     <Compile Include="TimKiemMonAn.Designer.cs">
       <DependentUpon>TimKiemMonAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiemPhieuThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimKiemPhieuThanhToan.Designer.cs">
+      <DependentUpon>TimKiemPhieuThanhToan.cs</DependentUpon>
     </Compile>
     <Compile Include="TimKiemThucPham.cs">
       <SubType>Form</SubType>
@@ -246,8 +258,11 @@
     <EmbeddedResource Include="TaoHoaDonChiTiet.resx">
       <DependentUpon>TaoHoaDonChiTiet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThongKeDoanhThu.resx">
-      <DependentUpon>ThongKeDoanhThu.cs</DependentUpon>
+    <EmbeddedResource Include="ThongKe10KhachHangMuaNhieuNhat.resx">
+      <DependentUpon>ThongKe10KhachHangMuaNhieuNhat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeDoanhThuTheoNgay.resx">
+      <DependentUpon>ThongKeDoanhThuTheoNgay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThongKeThucPham.resx">
       <DependentUpon>ThongKeThucPham.cs</DependentUpon>
@@ -257,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TimKiemMonAn.resx">
       <DependentUpon>TimKiemMonAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiemPhieuThanhToan.resx">
+      <DependentUpon>TimKiemPhieuThanhToan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TimKiemThucPham.resx">
       <DependentUpon>TimKiemThucPham.cs</DependentUpon>

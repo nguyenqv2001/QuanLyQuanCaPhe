@@ -100,9 +100,12 @@
             this.buttonCheck.TabIndex = 2;
             this.buttonCheck.Text = "Tìm";
             this.buttonCheck.UseVisualStyleBackColor = true;
+            this.buttonCheck.Click += new System.EventHandler(this.buttonCheck_Click_1);
             // 
             // dataGridViewDuLieu
             // 
+            this.dataGridViewDuLieu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewDuLieu.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dataGridViewDuLieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDuLieu.Location = new System.Drawing.Point(28, 164);
             this.dataGridViewDuLieu.Name = "dataGridViewDuLieu";

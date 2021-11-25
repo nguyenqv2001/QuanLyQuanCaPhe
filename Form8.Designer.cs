@@ -34,6 +34,7 @@ namespace QuanLyQuanCaPhe
             this.buttonTimKiemThucPham = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonTimKiemPhieuThanhToanTheoNgay = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonTimKiemKhachHang
@@ -75,7 +76,7 @@ namespace QuanLyQuanCaPhe
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(714, 467);
+            this.button1.Location = new System.Drawing.Point(714, 560);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 51);
             this.button1.TabIndex = 5;
@@ -93,11 +94,24 @@ namespace QuanLyQuanCaPhe
             this.label1.TabIndex = 6;
             this.label1.Text = "Hỗ Trợ Tìm Kiếm";
             // 
+            // buttonTimKiemPhieuThanhToanTheoNgay
+            // 
+            this.buttonTimKiemPhieuThanhToanTheoNgay.BackColor = System.Drawing.SystemColors.Highlight;
+            this.buttonTimKiemPhieuThanhToanTheoNgay.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTimKiemPhieuThanhToanTheoNgay.Location = new System.Drawing.Point(109, 485);
+            this.buttonTimKiemPhieuThanhToanTheoNgay.Name = "buttonTimKiemPhieuThanhToanTheoNgay";
+            this.buttonTimKiemPhieuThanhToanTheoNgay.Size = new System.Drawing.Size(613, 69);
+            this.buttonTimKiemPhieuThanhToanTheoNgay.TabIndex = 8;
+            this.buttonTimKiemPhieuThanhToanTheoNgay.Text = "Tìm kiếm phiếu thanh toán theo ngày";
+            this.buttonTimKiemPhieuThanhToanTheoNgay.UseVisualStyleBackColor = false;
+            this.buttonTimKiemPhieuThanhToanTheoNgay.Click += new System.EventHandler(this.buttonTimKiemPhieuThanhToanTheoNgay_Click);
+            // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 530);
+            this.ClientSize = new System.Drawing.Size(839, 638);
+            this.Controls.Add(this.buttonTimKiemPhieuThanhToanTheoNgay);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonTimKiemThucPham);
@@ -117,5 +131,6 @@ namespace QuanLyQuanCaPhe
         public System.Windows.Forms.Button buttonTimKiemThucPham;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Button buttonTimKiemPhieuThanhToanTheoNgay;
     }
 }

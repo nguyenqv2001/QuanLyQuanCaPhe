@@ -57,6 +57,7 @@
             this.buttonTim.TabIndex = 3;
             this.buttonTim.Text = "Tìm";
             this.buttonTim.UseVisualStyleBackColor = true;
+            this.buttonTim.Click += new System.EventHandler(this.buttonTim_Click_1);
             // 
             // textBoxDuLieu
             // 
@@ -89,6 +90,8 @@
             // 
             // dataGridViewTimKiemMonAn
             // 
+            this.dataGridViewTimKiemMonAn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewTimKiemMonAn.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dataGridViewTimKiemMonAn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTimKiemMonAn.Location = new System.Drawing.Point(29, 123);
             this.dataGridViewTimKiemMonAn.Name = "dataGridViewTimKiemMonAn";

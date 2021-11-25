@@ -37,7 +37,7 @@ namespace QuanLyQuanCaPhe
 
         private void thốngKêDoanhThuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ThongKeDoanhThu tkdt = new ThongKeDoanhThu();
+            ThongKeDoanhThuTheoNgay tkdt = new ThongKeDoanhThuTheoNgay();
             tkdt.Show();
         }
 
@@ -92,6 +92,12 @@ namespace QuanLyQuanCaPhe
             Form2b f2b = new Form2b();
             Hide();
             f2b.ShowDialog();
+        }
+
+        private void buttonTimKiemPhieuThanhToanTheoNgay_Click(object sender, EventArgs e)
+        {
+            TimKiemPhieuThanhToan tkptt = new TimKiemPhieuThanhToan();
+            tkptt.Show();
         }
     }
 }

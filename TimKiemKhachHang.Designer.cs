@@ -90,6 +90,8 @@
             // 
             // dataGridViewDuLieu
             // 
+            this.dataGridViewDuLieu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewDuLieu.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
             this.dataGridViewDuLieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewDuLieu.Location = new System.Drawing.Point(30, 208);
             this.dataGridViewDuLieu.Name = "dataGridViewDuLieu";
