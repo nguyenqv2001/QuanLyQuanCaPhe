@@ -64,6 +64,7 @@
             this.buttonTim.TabIndex = 2;
             this.buttonTim.Text = "Tìm";
             this.buttonTim.UseVisualStyleBackColor = true;
+            this.buttonTim.Click += new System.EventHandler(this.buttonTim_Click_1);
             // 
             // radioButtonTen
             // 
