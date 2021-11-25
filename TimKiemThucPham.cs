@@ -72,7 +72,7 @@ namespace QuanLyQuanCaPhe
             {
                 string tenThucPham = textBoxDuLieu.Text;
                 SqlCommand command = new SqlCommand("SELECT maThucPham, tenThucPham, donViTinh, NSX, HSD," +
-                    " maNCC FROM ThucPham WHERE tenThucPham LIKE '%" + tenThucPham + "%'");
+                    " maNCC FROM ThucPham WHERE tenThucPham LIKE N'%" + tenThucPham + "%'");
 
                 dataGridViewDuLieu.DataSource = tp.getThucPham(command);
             }
@@ -84,6 +84,13 @@ namespace QuanLyQuanCaPhe
 
                 dataGridViewDuLieu.DataSource = tp.getThucPham(command);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form8 f8 = new Form8();
+            Hide();
+            f8.ShowDialog();
         }
     }
 }

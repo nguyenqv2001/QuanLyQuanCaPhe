@@ -35,6 +35,7 @@
             this.radioButtonID = new System.Windows.Forms.RadioButton();
             this.buttonCheck = new System.Windows.Forms.Button();
             this.dataGridViewDuLieu = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDuLieu)).BeginInit();
             this.SuspendLayout();
@@ -111,14 +112,26 @@
             this.dataGridViewDuLieu.Name = "dataGridViewDuLieu";
             this.dataGridViewDuLieu.RowHeadersWidth = 51;
             this.dataGridViewDuLieu.RowTemplate.Height = 24;
-            this.dataGridViewDuLieu.Size = new System.Drawing.Size(745, 332);
+            this.dataGridViewDuLieu.Size = new System.Drawing.Size(745, 288);
             this.dataGridViewDuLieu.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(698, 472);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 35);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // TimKiemThucPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 519);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridViewDuLieu);
             this.Name = "TimKiemThucPham";
@@ -139,5 +152,6 @@
         public System.Windows.Forms.RadioButton radioButtonID;
         public System.Windows.Forms.Button buttonCheck;
         public System.Windows.Forms.DataGridView dataGridViewDuLieu;
+        public System.Windows.Forms.Button button1;
     }
 }

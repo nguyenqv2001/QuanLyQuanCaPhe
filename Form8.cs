@@ -72,18 +72,21 @@ namespace QuanLyQuanCaPhe
         private void buttonTimKiemKhachHang_Click(object sender, EventArgs e)
         {
             TimKiemKhachHang tkkh = new TimKiemKhachHang();
+            Hide();
             tkkh.Show();
         }
 
         private void buttonTimKiemMonAn_Click(object sender, EventArgs e)
         {
             TimKiemMonAn tkma = new TimKiemMonAn();
+            Hide();
             tkma.Show();
         }
 
         private void buttonTimKiemThucPham_Click(object sender, EventArgs e)
         {
             TimKiemThucPham tktp = new TimKiemThucPham();
+            Hide();
             tktp.Show();
         }
 
@@ -97,6 +100,7 @@ namespace QuanLyQuanCaPhe
         private void buttonTimKiemPhieuThanhToanTheoNgay_Click(object sender, EventArgs e)
         {
             TimKiemPhieuThanhToan tkptt = new TimKiemPhieuThanhToan();
+            Hide();
             tkptt.Show();
         }
     }

@@ -47,7 +47,7 @@ namespace QuanLyQuanCaPhe
             if (radioButtonTenMon.Checked)
             {
                 string tenMon = textBoxDuLieu.Text;
-                SqlCommand command = new SqlCommand("SELECT maMon, tenMon, donGiaMon, donViTinh, maNhom, hinhAnh FROM MonAn WHERE tenMon LIKE '%" + tenMon + "%'");
+                SqlCommand command = new SqlCommand("SELECT maMon, tenMon, donGiaMon, donViTinh, maNhom, hinhAnh FROM MonAn WHERE tenMon LIKE N'%" + tenMon + "%'");
 
                 dataGridViewTimKiemMonAn.DataSource = monan.getMonAn(command);
             }
@@ -57,6 +57,13 @@ namespace QuanLyQuanCaPhe
                 SqlCommand command = new SqlCommand("SELECT maMon, tenMon, donGiaMon, donViTinh, maNhom, hinhAnh FROM MonAn WHERE maNhom LIKE '%" + loaiMon + "%'");
                 dataGridViewTimKiemMonAn.DataSource = monan.getMonAn(command);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form8 f8 = new Form8();
+            Hide();
+            f8.ShowDialog();
         }
     }
 }

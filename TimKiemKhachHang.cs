@@ -60,5 +60,12 @@ namespace QuanLyQuanCaPhe
                 dataGridViewDuLieu.DataSource = kh.getKhachHang(command);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form8 f8 = new Form8();
+            Hide();
+            f8.ShowDialog();
+        }
     }
 }

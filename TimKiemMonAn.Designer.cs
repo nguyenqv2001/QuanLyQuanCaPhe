@@ -34,6 +34,7 @@
             this.radioButtonTenMon = new System.Windows.Forms.RadioButton();
             this.radioButtonLoaiMon = new System.Windows.Forms.RadioButton();
             this.dataGridViewTimKiemMonAn = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTimKiemMonAn)).BeginInit();
             this.SuspendLayout();
@@ -95,15 +96,28 @@
             this.dataGridViewTimKiemMonAn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTimKiemMonAn.Location = new System.Drawing.Point(29, 123);
             this.dataGridViewTimKiemMonAn.Name = "dataGridViewTimKiemMonAn";
+            this.dataGridViewTimKiemMonAn.RowHeadersWidth = 51;
             this.dataGridViewTimKiemMonAn.RowTemplate.Height = 24;
             this.dataGridViewTimKiemMonAn.Size = new System.Drawing.Size(742, 310);
             this.dataGridViewTimKiemMonAn.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(696, 456);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 35);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // TimKiemMonAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 503);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridViewTimKiemMonAn);
             this.Name = "TimKiemMonAn";
@@ -123,5 +137,6 @@
         public System.Windows.Forms.RadioButton radioButtonTenMon;
         public System.Windows.Forms.RadioButton radioButtonLoaiMon;
         public System.Windows.Forms.DataGridView dataGridViewTimKiemMonAn;
+        public System.Windows.Forms.Button button1;
     }
 }

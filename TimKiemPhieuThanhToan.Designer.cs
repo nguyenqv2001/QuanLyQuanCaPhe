@@ -35,6 +35,7 @@
             this.dateTimePickerTo = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerFrom = new System.Windows.Forms.DateTimePicker();
             this.dataGridViewTimPhieuThanhToan = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTimPhieuThanhToan)).BeginInit();
             this.SuspendLayout();
@@ -102,15 +103,28 @@
             this.dataGridViewTimPhieuThanhToan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewTimPhieuThanhToan.Location = new System.Drawing.Point(57, 155);
             this.dataGridViewTimPhieuThanhToan.Name = "dataGridViewTimPhieuThanhToan";
+            this.dataGridViewTimPhieuThanhToan.RowHeadersWidth = 51;
             this.dataGridViewTimPhieuThanhToan.RowTemplate.Height = 24;
             this.dataGridViewTimPhieuThanhToan.Size = new System.Drawing.Size(687, 291);
             this.dataGridViewTimPhieuThanhToan.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(669, 470);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 35);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // TimKiemPhieuThanhToan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 470);
+            this.ClientSize = new System.Drawing.Size(749, 527);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridViewTimPhieuThanhToan);
             this.Name = "TimKiemPhieuThanhToan";
@@ -131,5 +145,6 @@
         public System.Windows.Forms.DateTimePicker dateTimePickerTo;
         public System.Windows.Forms.DateTimePicker dateTimePickerFrom;
         public System.Windows.Forms.DataGridView dataGridViewTimPhieuThanhToan;
+        public System.Windows.Forms.Button button1;
     }
 }

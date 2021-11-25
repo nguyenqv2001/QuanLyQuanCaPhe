@@ -30,5 +30,12 @@ namespace QuanLyQuanCaPhe
             command.Parameters.Add("@to", SqlDbType.DateTime).Value = To;
             dataGridViewTimPhieuThanhToan.DataSource = hdct.getPhieuThanhToanTheoNgay(command);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form8 f8 = new Form8();
+            Hide();
+            f8.ShowDialog();
+        }
     }
 }

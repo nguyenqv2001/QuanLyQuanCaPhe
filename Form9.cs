@@ -20,12 +20,14 @@ namespace QuanLyQuanCaPhe
         private void buttonThongKeDoanhThu_Click(object sender, EventArgs e)
         {
             ThongKe10KhachHangMuaNhieuNhat tk10khmnn = new ThongKe10KhachHangMuaNhieuNhat();
+            Hide();
             tk10khmnn.Show();
         }
 
         private void buttonThongKeThucPham_Click(object sender, EventArgs e)
         {
             ThongKeThucPham tktp = new ThongKeThucPham();
+            Hide();
             tktp.Show();
         }
 
@@ -39,6 +41,7 @@ namespace QuanLyQuanCaPhe
         private void buttonThongKeDoanhThuTheoNgay_Click(object sender, EventArgs e)
         {
             ThongKeDoanhThuTheoNgay tkdttn = new ThongKeDoanhThuTheoNgay();
+            Hide();
             tkdttn.Show();
         }
     }

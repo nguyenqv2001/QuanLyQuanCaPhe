@@ -33,6 +33,7 @@
             this.buttonKiemTra = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewThongKeDoanhThuTheoNgay = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewThongKeDoanhThuTheoNgay)).BeginInit();
             this.SuspendLayout();
@@ -80,15 +81,28 @@
             this.dataGridViewThongKeDoanhThuTheoNgay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewThongKeDoanhThuTheoNgay.Location = new System.Drawing.Point(56, 238);
             this.dataGridViewThongKeDoanhThuTheoNgay.Name = "dataGridViewThongKeDoanhThuTheoNgay";
+            this.dataGridViewThongKeDoanhThuTheoNgay.RowHeadersWidth = 51;
             this.dataGridViewThongKeDoanhThuTheoNgay.RowTemplate.Height = 24;
             this.dataGridViewThongKeDoanhThuTheoNgay.Size = new System.Drawing.Size(840, 381);
             this.dataGridViewThongKeDoanhThuTheoNgay.TabIndex = 4;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Location = new System.Drawing.Point(821, 638);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 35);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ThongKeDoanhThuTheoNgay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(952, 670);
+            this.ClientSize = new System.Drawing.Size(906, 685);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewThongKeDoanhThuTheoNgay);
@@ -108,5 +122,6 @@
         public System.Windows.Forms.Button buttonKiemTra;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.DataGridView dataGridViewThongKeDoanhThuTheoNgay;
+        public System.Windows.Forms.Button button1;
     }
 }

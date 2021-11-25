@@ -48,5 +48,12 @@ namespace QuanLyQuanCaPhe
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form9 f9 = new Form9();
+            Hide();
+            f9.Show();
+        }
     }
 }
