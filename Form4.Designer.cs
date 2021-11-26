@@ -40,9 +40,7 @@ namespace QuanLyQuanCaPhe
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
             this.button26 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -82,6 +80,7 @@ namespace QuanLyQuanCaPhe
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -210,17 +209,6 @@ namespace QuanLyQuanCaPhe
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(712, 787);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 29);
-            this.label6.TabIndex = 145;
-            this.label6.Text = "Tổng:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -230,18 +218,6 @@ namespace QuanLyQuanCaPhe
             this.label4.Size = new System.Drawing.Size(165, 25);
             this.label4.TabIndex = 22;
             this.label4.Text = "Mã Khách Hàng :";
-            // 
-            // textBox8
-            // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(801, 784);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(227, 34);
-            this.textBox8.TabIndex = 144;
-            this.textBox8.TabStop = false;
             // 
             // button26
             // 
@@ -253,6 +229,7 @@ namespace QuanLyQuanCaPhe
             this.button26.TabIndex = 132;
             this.button26.Text = "Tạo Hóa Đơn";
             this.button26.UseVisualStyleBackColor = false;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // textBox4
             // 
@@ -262,6 +239,7 @@ namespace QuanLyQuanCaPhe
             this.textBox4.Size = new System.Drawing.Size(257, 30);
             this.textBox4.TabIndex = 21;
             this.textBox4.TabStop = false;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox5
             // 
@@ -336,6 +314,7 @@ namespace QuanLyQuanCaPhe
             this.button27.TabIndex = 133;
             this.button27.Text = "Thêm Món";
             this.button27.UseVisualStyleBackColor = false;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // panel3
             // 
@@ -365,6 +344,7 @@ namespace QuanLyQuanCaPhe
             this.button28.TabIndex = 142;
             this.button28.Text = "Thoát";
             this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click_1);
             // 
             // button12
             // 
@@ -462,6 +442,7 @@ namespace QuanLyQuanCaPhe
             this.button30.TabIndex = 141;
             this.button30.Text = "Thanh Toán";
             this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
             // button25
             // 
@@ -470,7 +451,7 @@ namespace QuanLyQuanCaPhe
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(192, 59);
             this.button25.TabIndex = 140;
-            this.button25.Text = "Chuyển bàn";
+            this.button25.Text = "Sửa";
             this.button25.UseVisualStyleBackColor = true;
             // 
             // label7
@@ -505,6 +486,7 @@ namespace QuanLyQuanCaPhe
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(956, 345);
             this.dataGridView1.TabIndex = 134;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Panel1
             // 
@@ -529,6 +511,7 @@ namespace QuanLyQuanCaPhe
             this.Label11.TabIndex = 3;
             this.Label11.Text = "QUẢN LÝ BÀN ĂN";
             this.Label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label11.Click += new System.EventHandler(this.Label11_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -695,13 +678,23 @@ namespace QuanLyQuanCaPhe
             this.button24.UseVisualStyleBackColor = true;
             this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
+            // button29
+            // 
+            this.button29.Location = new System.Drawing.Point(711, 774);
+            this.button29.Margin = new System.Windows.Forms.Padding(4);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(192, 59);
+            this.button29.TabIndex = 146;
+            this.button29.Text = "Show All";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1667, 838);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.button29);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.button28);
             this.Controls.Add(this.panel2);
@@ -714,6 +707,7 @@ namespace QuanLyQuanCaPhe
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Form4";
             this.Text = "Form Quản lý bàn ăn";
+            this.Load += new System.EventHandler(this.Form4_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -722,7 +716,6 @@ namespace QuanLyQuanCaPhe
             this.Panel1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -739,9 +732,7 @@ namespace QuanLyQuanCaPhe
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
@@ -781,5 +772,6 @@ namespace QuanLyQuanCaPhe
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button29;
     }
 }

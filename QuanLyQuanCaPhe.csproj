@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BAN.cs" />
+    <Compile Include="QUANLYBANAN.cs" />
     <Compile Include="QUANLYMONAN.cs" />
     <Compile Include="QuanLyThongTinMonAnDAL.cs" />
     <Compile Include="QuanLyThongTinMonAnBLL.cs" />

@@ -198,11 +198,11 @@ namespace QuanLyQuanCaPhe
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(31, 105);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 105);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(849, 242);
+            this.dataGridView1.Size = new System.Drawing.Size(906, 242);
             this.dataGridView1.TabIndex = 0;
             // 
             // btTimKiem
