@@ -293,6 +293,7 @@ namespace QuanLyQuanCaPhe
             this.btnext.TabIndex = 142;
             this.btnext.Text = ">>";
             this.btnext.UseVisualStyleBackColor = false;
+            this.btnext.Click += new System.EventHandler(this.btnext_Click);
             // 
             // Form3
             // 

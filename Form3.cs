@@ -39,7 +39,22 @@ namespace QuanLyQuanCaPhe
 
         private void btprev_Click(object sender, EventArgs e)
         {
+            int rno = dataGridView1.CurrentCell.RowIndex;
 
+            if (rno > 0)
+            {
+                rno--;
+                textBox1.Text = dataGridView1.Rows[rno].Cells["maMon"].Value.ToString();
+                textBox2.Text = dataGridView1.Rows[rno].Cells["tenMon"].Value.ToString();
+                textBox3.Text = dataGridView1.Rows[rno].Cells["donGiaMon"].Value.ToString();
+                textBox4.Text = dataGridView1.Rows[rno].Cells["donViTinh"].Value.ToString();
+                textBox5.Text = dataGridView1.Rows[rno].Cells["maNhom"].Value.ToString();
+                textBox6.Text = dataGridView1.Rows[rno].Cells["hinhAnh"].Value.ToString();
+                picNV.ImageLocation = dataGridView1.Rows[rno].Cells["hinhAnh"].Value.ToString();
+                dataGridView1.CurrentCell = dataGridView1[0, rno];
+            }
+            else
+            { MessageBox.Show("nhân viên đầu"); }
         }
 
 
@@ -53,7 +68,6 @@ namespace QuanLyQuanCaPhe
             monan.donGiaMon = int.Parse(textBox3.Text);
             monan.donViTinh = textBox4.Text;
             monan.maNhom = textBox5.Text;
-            monan.hinhAnh = textBox6.Text;
 
             if (string.IsNullOrEmpty(textBox6.Text))
             {
@@ -181,6 +195,26 @@ namespace QuanLyQuanCaPhe
                 else
                     MessageBox.Show("Đã xảy ra lỗi , xin thử lại sau", "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
             }
+        }
+
+        private void btnext_Click(object sender, EventArgs e)
+        {
+            int rno = dataGridView1.CurrentCell.RowIndex;
+            if (rno < dataGridView1.RowCount - 2)
+            {
+                rno++;
+
+                textBox1.Text = dataGridView1.Rows[rno].Cells["maMon"].Value.ToString();
+                textBox2.Text = dataGridView1.Rows[rno].Cells["tenMon"].Value.ToString();
+                textBox3.Text = dataGridView1.Rows[rno].Cells["donGiaMon"].Value.ToString();
+                textBox4.Text = dataGridView1.Rows[rno].Cells["donViTinh"].Value.ToString();
+                textBox5.Text = dataGridView1.Rows[rno].Cells["maNhom"].Value.ToString();
+                textBox6.Text = dataGridView1.Rows[rno].Cells["hinhAnh"].Value.ToString();
+                picNV.ImageLocation = dataGridView1.Rows[rno].Cells["hinhAnh"].Value.ToString();
+                dataGridView1.CurrentCell = dataGridView1[0, rno];
+            }
+            else
+            { MessageBox.Show("nhân viên cuối"); }
         }
     }
 }

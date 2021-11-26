@@ -41,19 +41,22 @@ namespace QuanLyQuanCaPhe
         // Chức năng thêm vào 
         public bool InsertMONAN(QUANLYMONAN monan)
         {
-            string sql = "INSERT INTO MonAn(maMon,tenMon,donGiaMon,donViTinh,maNhom,hinhAnh) VALUES( @maMon,@tenMon ,@donGiaMon , @donViTinh, @hinhAnh);";
+            string sql = "INSERT INTO MonAn(maMon,tenMon,donGiaMon,donViTinh,maNhom,hinhAnh) VALUES(@maMon,@tenMon, @donGiaMon, @donViTinh, @maNhom,@hinhAnh); ";
             SqlConnection con = dc.GetConnection();
             try
             {
                 cmd = new SqlCommand(sql, con);
                 con.Open();
+                
                 cmd.Parameters.Add("@maMon", SqlDbType.Char).Value = monan.maMon;
                 cmd.Parameters.Add("@tenMon", SqlDbType.NVarChar).Value = monan.tenMon;
                 cmd.Parameters.Add("@donGiaMon", SqlDbType.Int).Value = monan.donGiaMon;
                 cmd.Parameters.Add("@donViTinh", SqlDbType.NVarChar).Value = monan.donViTinh;
                 cmd.Parameters.Add("@maNhom", SqlDbType.Char).Value = monan.maNhom;
                 cmd.Parameters.Add("@hinhAnh", SqlDbType.VarChar).Value = monan.hinhAnh;
+                
                 cmd.ExecuteNonQuery();
+                
                 con.Close();
             }
             catch (Exception e)
