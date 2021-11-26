@@ -100,7 +100,7 @@ namespace QuanLyQuanCaPhe
                 nl.ngaynhap = DateTime.Parse(tbNgaynhap.Text);
 
 
-                if (nlbll.InsertNNLCT(nl) && nlbll.InsertNNL(nl))
+                if (nlbll.InsertNNL(nl) && nlbll.InsertNNLCT(nl))
                 {
                     tbID_phieunhap.Text = tbDongia.Text = tbNgaynhap.Text = tbSoluong.Text = tbID_NCC.Text = tbID_NV.Text = tbID_ThucPham.Text = tbTong.Text = "";
                     ShowAllNNL();
@@ -183,7 +183,7 @@ namespace QuanLyQuanCaPhe
             {
                 NhapNguyenLieu nl = new NhapNguyenLieu();
                 nl.maPN = int.Parse(tbID_phieunhap.Text);
-                if (nlbll.DeleteNNL(nl) && nlbll.DeleteNNLCT(nl))
+                if (nlbll.DeleteNNLCT(nl) && nlbll.DeleteNNL(nl))
                 {
                     tbID_phieunhap.Text = tbDongia.Text = tbNgaynhap.Text = tbSoluong.Text = tbID_NCC.Text = tbID_NV.Text = tbID_ThucPham.Text = tbTong.Text = "";
                     ShowAllNNL();
