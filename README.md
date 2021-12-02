@@ -5,7 +5,7 @@
                    
          
 ###  Hoang Minh Nhat 
-                       1.Dang nhap
+                       1.Dang nhap , dang ky
                        2.Trang chu gioi thieu quan
                        3.Quan Ly thong tin Food
                        4.Quan ly ban an                   
