@@ -49,6 +49,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BAN.cs" />
+    <Compile Include="QuanLyBanAnBLL.cs" />
+    <Compile Include="QuanLyBanAnDAL.cs" />
+    <Compile Include="QuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="QUANLYBANAN.cs" />
     <Compile Include="QUANLYMONAN.cs" />
     <Compile Include="QuanLyThongTinMonAnDAL.cs" />
@@ -148,6 +156,9 @@
     <Compile Include="NhapNguyenLieu.cs" />
     <Compile Include="NhapNguyenLieuBLL.cs" />
     <Compile Include="NhapNguyenLieuDAL.cs" />
+    <Compile Include="TAIKHOAN.cs" />
+    <Compile Include="TaiKhoanBLL.cs" />
+    <Compile Include="TaiKhoanDAL.cs" />
     <Compile Include="ThongKe10KhachHangMuaNhieuNhat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -257,6 +268,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QuanLyTaiKhoan.resx">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TaoHoaDon.resx">
       <DependentUpon>TaoHoaDon.cs</DependentUpon>
     </EmbeddedResource>

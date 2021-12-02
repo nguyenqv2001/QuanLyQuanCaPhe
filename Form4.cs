@@ -15,230 +15,374 @@ namespace QuanLyQuanCaPhe
         DataConnection dc;
         SqlDataAdapter da;
         SqlCommand cmd;
+        public void ShowAllBANANCT()
+        {
+            string sql = "SELECT * FROM THONGKEBANHANG where maBan LIKE '%" + maBan + "%'";
+            dc = new DataConnection();
+            SqlConnection con = dc.GetConnection();
+            da = new SqlDataAdapter(sql, con);
+            con.Open();
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            dataGridView1.DataSource = dt;
+        }
+        //
+        QuanLyBanAnBLL bananbll;
+        //
         public Form4()
         {
             InitializeComponent();
-        }
-        public void ShowAllTHONGKE()
-        {
-            string sql = "SELECT * FROM THONGKEBANHANG";
-            dc = new DataConnection();
-            SqlConnection con = dc.GetConnection();
-            da = new SqlDataAdapter(sql, con);
-            con.Open();
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            con.Close();
-            dataGridView1.DataSource = dt;
+            bananbll = new QuanLyBanAnBLL();
         }
         public void ShowAllBANAN()
         {
-            string sql = "SELECT * FROM THONGKEBANHANG where maBan LIKE '%"+ maBan + "%'";
+            DataTable dt = bananbll.getAllBANAN();
+            dataGridView1.DataSource = dt;
+
+            // xet trang thai cho tung ban an
+            string sql = "SELECT maBan,tinhTrang FROM BanAn";
             dc = new DataConnection();
             SqlConnection con = dc.GetConnection();
             da = new SqlDataAdapter(sql, con);
             con.Open();
-            DataTable dt = new DataTable();
-            da.Fill(dt);
+            DataTable tt = new DataTable();
+            da.Fill(tt);
             con.Close();
-            dataGridView1.DataSource = dt;
+            // khoi tao trang thai trong
+            button1.BackColor = Color.Red;
+            button2.BackColor = Color.Red;
+            button3.BackColor = Color.Red;
+            button4.BackColor = Color.Red;
+            button5.BackColor = Color.Red;
+            button6.BackColor = Color.Red;
+            button7.BackColor = Color.Red;
+            button8.BackColor = Color.Red;
+            button9.BackColor = Color.Red;
+            button10.BackColor = Color.Red;
+            button11.BackColor = Color.Red;
+            button12.BackColor = Color.Red;
+            button13.BackColor = Color.Red;
+            button14.BackColor = Color.Red;
+            button15.BackColor = Color.Red;
+            button16.BackColor = Color.Red;
+            button17.BackColor = Color.Red;
+            button18.BackColor = Color.Red;
+            button19.BackColor = Color.Red;
+            button20.BackColor = Color.Red;
+            button21.BackColor = Color.Red;
+            button22.BackColor = Color.Red;
+            button23.BackColor = Color.Red;
+            button24.BackColor = Color.Red;
+            //
+            if (Convert.ToInt32(tt.Rows[0]["tinhTrang"]) == 1)
+            {
+                button1.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[1]["tinhTrang"]) == 1)
+            {
+                button2.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[2]["tinhTrang"]) == 1)
+            {
+                button3.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[3]["tinhTrang"]) == 1)
+            {
+                button4.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[4]["tinhTrang"]) == 1)
+            {
+                button5.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[5]["tinhTrang"]) == 1)
+            {
+                button6.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[6]["tinhTrang"]) == 1)
+            {
+                button7.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[7]["tinhTrang"]) == 1)
+            {
+                button8.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[8]["tinhTrang"]) == 1)
+            {
+                button9.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[9]["tinhTrang"]) == 1)
+            {
+                button10.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[10]["tinhTrang"]) == 1)
+            {
+                button11.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[11]["tinhTrang"]) == 1)
+            {
+                button12.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[12]["tinhTrang"]) == 1)
+            {
+                button13.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[13]["tinhTrang"]) == 1)
+            {
+                button14.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[14]["tinhTrang"]) == 1)
+            {
+                button15.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[15]["tinhTrang"]) == 1)
+            {
+                button16.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[16]["tinhTrang"]) == 1)
+            {
+                button17.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[17]["tinhTrang"]) == 1)
+            {
+                button18.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[18]["tinhTrang"]) == 1)
+            {
+                button19.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[19]["tinhTrang"]) == 1)
+            {
+                button20.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[20]["tinhTrang"]) == 1)
+            {
+                button21.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[21]["tinhTrang"]) == 1)
+            {
+                button22.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[22]["tinhTrang"]) == 1)
+            {
+                button23.BackColor = Color.Green;
+            }
+            if (Convert.ToInt32(tt.Rows[23]["tinhTrang"]) == 1)
+            {
+                button24.BackColor = Color.Green;
+            }
         }
+        
         private void button28_Click(object sender, EventArgs e)
         {
             Form2b f2b = new Form2b();
             Hide();
             f2b.ShowDialog();
         }
-
-
         string maBan;
         private void button1_Click(object sender, EventArgs e)
         {
             maBan = "B01";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             maBan = "B02";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             maBan = "B03";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             maBan = "B04";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             maBan = "B05";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             maBan = "B06";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             maBan = "B07";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             maBan = "B08";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             maBan = "B09";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
             maBan = "B10";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
             maBan = "B11";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
             maBan = "B12";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
             maBan = "B13";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button14_Click(object sender, EventArgs e)
         {
             maBan = "B14";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
             maBan = "B15";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
             maBan = "B16";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button17_Click(object sender, EventArgs e)
         {
             maBan = "B17";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button18_Click(object sender, EventArgs e)
         {
             maBan = "B18";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button19_Click(object sender, EventArgs e)
         {
             maBan = "B19";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button20_Click(object sender, EventArgs e)
         {
             maBan = "B20";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button21_Click(object sender, EventArgs e)
         {
             maBan = "B21";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button22_Click(object sender, EventArgs e)
         {
             maBan = "B22";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button23_Click(object sender, EventArgs e)
         {
             maBan = "B23";
-            textBox2.Text = maBan;
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
 
         private void button24_Click(object sender, EventArgs e)
         {
             maBan = "B24";
-            textBox2.Text = maBan; 
-            ShowAllBANAN();
+            ShowAllBANANCT();
         }
         
-        // button them
+        // button them hoa don
         private void button26_Click(object sender, EventArgs e)
         {
-            
+            QUANLYBANAN banan = new QUANLYBANAN();
+
+            banan.maPhieuYeuCau = Int32.Parse(textBox7.Text);
+            banan.maKH = textBox4.Text;
+            banan.maNV = textBox5.Text;
+            banan.ngayYeuCau = textBox6.Text;
+            banan.maMon = textBox3.Text;
+            banan.soLuongMon = Int32.Parse(textBox1.Text);
+            banan.maBan = textBox2.Text;
+
+            if (bananbll.InsertHOADON(banan))
+            {
+                ShowAllBANAN();
+            }
+            else
+                MessageBox.Show("Đã xảy ra lỗi , không tạo được hóa đơn", "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+
+            if (bananbll.InsertMONAN(banan))
+            {
+                ShowAllBANAN();
+            }
+            else
+                MessageBox.Show("Đã xảy ra lỗi , không thêm được món ăn", "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            if (bananbll.UpdateBANAN(banan))
+            {
+                ShowAllBANAN();
+            }
+            else
+                MessageBox.Show("Đã xảy ra lỗi , không update được trạng thái bàn", "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
         }
 
         private void Label11_Click(object sender, EventArgs e)
         {
             ShowAllBANAN();
         }
-
+        // button them mon
         private void button27_Click(object sender, EventArgs e)
         {
+            QUANLYBANAN banan = new QUANLYBANAN();
 
+            banan.maPhieuYeuCau = Int32.Parse(textBox7.Text);
+            banan.maMon = textBox3.Text;
+            banan.soLuongMon = Int32.Parse(textBox1.Text);
+            banan.maBan = textBox2.Text;
+
+            if (bananbll.InsertMONAN(banan))
+            {
+                ShowAllBANAN();
+            }
+            else
+                MessageBox.Show("Đã xảy ra lỗi , xin thử lại sau", "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
         }
 
         private void Form4_Load(object sender, EventArgs e)
         {
-            ShowAllTHONGKE();
+            ShowAllBANAN();
         }
 
         private void button28_Click_1(object sender, EventArgs e)
@@ -250,6 +394,16 @@ namespace QuanLyQuanCaPhe
 
         private void button30_Click(object sender, EventArgs e)
         {
+            QUANLYBANAN banan = new QUANLYBANAN();
+            banan.maBan = textBox2.Text;
+            // update trang thai ban an khi thanh toan
+            if (bananbll.UpdateBANANTT(banan))
+            {
+                ShowAllBANAN();
+            }
+            else
+                MessageBox.Show("Đã xảy ra lỗi , không update được trạng thái bàn", "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            // Qua Form hoa don de in ra hoa don
             Form f5 = new Form5();
             Hide();
             f5.ShowDialog();
@@ -257,7 +411,7 @@ namespace QuanLyQuanCaPhe
 
         private void button29_Click(object sender, EventArgs e)
         {
-            ShowAllTHONGKE();
+            
         }
 
         string ID;
@@ -280,6 +434,94 @@ namespace QuanLyQuanCaPhe
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        // button xoa hoa don
+        private void button32_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn xóa không ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                QUANLYBANAN banan = new QUANLYBANAN();
+
+                banan.maPhieuYeuCau = Int32.Parse(textBox7.Text);
+                if (bananbll.DeleteMONANALL(banan))
+                {
+                    ShowAllBANAN();
+                }
+                else
+                    MessageBox.Show("Đã xảy ra lỗi , Không xóa được tất cả món ăn!", "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                if (bananbll.DeleteHOADON(banan))
+                {
+                    ShowAllBANAN();
+                }
+                else
+                    MessageBox.Show("Đã xảy ra lỗi , không xóa được hóa đơn !", "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+        // button sua hoa don
+        private void button33_Click(object sender, EventArgs e)
+        {
+            QUANLYBANAN banan = new QUANLYBANAN();
+
+            banan.maPhieuYeuCau = Int32.Parse(textBox7.Text);
+            banan.maKH = textBox4.Text;
+            banan.maNV = textBox5.Text;
+            banan.ngayYeuCau = textBox6.Text;
+            banan.maMon = textBox3.Text;
+            banan.soLuongMon = Int32.Parse(textBox1.Text);
+            banan.maBan = textBox2.Text;
+            if (bananbll.UpdateHOADON(banan))
+            {
+                ShowAllBANAN();
+            }
+            else
+                MessageBox.Show("Đã xảy ra lỗi , xin thử lại sau", "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            if (bananbll.UpdateMONAN(banan))
+            {
+                ShowAllBANAN();
+            }
+            else
+                MessageBox.Show("Đã xảy ra lỗi , xin thử lại sau", "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+        }
+
+        //---------------------------------------------------------------------------------------
+
+        // button xoa mon
+        private void button31_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn xóa không ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                QUANLYBANAN banan = new QUANLYBANAN();
+
+                banan.maPhieuYeuCau = Int32.Parse(textBox7.Text);
+                banan.maMon = textBox3.Text;
+                if (bananbll.DeleteMONAN(banan))
+                {
+                    ShowAllBANAN();
+                }
+                else
+                    MessageBox.Show("Đã xảy ra lỗi , xin thử lại sau", "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+        // button sua mon
+        private void button34_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void textBox7_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            ShowAllBANAN();
         }
     }
 }

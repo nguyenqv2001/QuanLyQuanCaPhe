@@ -72,5 +72,12 @@ namespace QuanLyQuanCaPhe
             Hide();
             f1.ShowDialog();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            QuanLyTaiKhoan QLTK = new QuanLyTaiKhoan();
+            Hide();
+            QLTK.ShowDialog();
+        }
     }
 }

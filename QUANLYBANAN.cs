@@ -15,5 +15,6 @@ namespace QuanLyQuanCaPhe
         public string maMon { set; get; }
         public int soLuongMon { set; get; }
         public string maBan { set; get; }
+        public string tinhTrang { set; get; }
     }
 }
