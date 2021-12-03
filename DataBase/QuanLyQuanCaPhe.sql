@@ -343,7 +343,36 @@ VALUES ('B08',N'Bronze',N'0', 50000,'https://noithatlogic.vn/upload/00aff611-24e
 INSERT INTO BanAn(maBan,loaiBan,tinhTrang,donGiaBan,hinhAnh)
 VALUES ('B09',N'Bronze',N'1', 50000,'https://noithatlogic.vn/upload/ban-ghe-ngoai-troi-gia-may-10.jpg?w=400&h=267');
 INSERT INTO BanAn(maBan,loaiBan,tinhTrang,donGiaBan,hinhAnh)
-VALUES ('B010',N'Bronze',N'1', 50000,'https://noithatlogic.vn/upload/Nhom-duc-mat-da/mat-da-D120cm-BND-03.01.jpg?w=400&h=400');
+VALUES ('B10',N'Bronze',N'1', 50000,'https://noithatlogic.vn/upload/Nhom-duc-mat-da/mat-da-D120cm-BND-03.01.jpg?w=400&h=400');
+INSERT INTO BanAn(maBan,loaiBan,tinhTrang,donGiaBan,hinhAnh)
+VALUES ('B11',N'Gold',N'0', 150000,'https://noithatlogic.vn/upload/8ca6f938-25bc-4321-aad6-dac837165fb6/ban-Eames-vuong-2-tang-1.jpg?w=400&h=400');
+INSERT INTO BanAn(maBan,loaiBan,tinhTrang,donGiaBan,hinhAnh)
+VALUES ('B12',N'Gold',N'0', 150000,'https://noithatlogic.vn/upload/8ca6f938-25bc-4321-aad6-dac837165fb6/ban-Eames-vuong-2-tang-1.jpg?w=400&h=400');
+INSERT INTO BanAn(maBan,loaiBan,tinhTrang,donGiaBan,hinhAnh)
+VALUES ('B13',N'Gold',N'0', 150000,'https://noithatlogic.vn/upload/8ca6f938-25bc-4321-aad6-dac837165fb6/ban-Eames-vuong-2-tang-1.jpg?w=400&h=400');
+INSERT INTO BanAn(maBan,loaiBan,tinhTrang,donGiaBan,hinhAnh)
+VALUES ('B14',N'Gold',N'0', 150000,'https://noithatlogic.vn/upload/8ca6f938-25bc-4321-aad6-dac837165fb6/ban-Eames-vuong-2-tang-1.jpg?w=400&h=400');
+INSERT INTO BanAn(maBan,loaiBan,tinhTrang,donGiaBan,hinhAnh)
+VALUES ('B15',N'Gold',N'0', 150000,'https://noithatlogic.vn/upload/8ca6f938-25bc-4321-aad6-dac837165fb6/ban-Eames-vuong-2-tang-1.jpg?w=400&h=400');
+INSERT INTO BanAn(maBan,loaiBan,tinhTrang,donGiaBan,hinhAnh)
+VALUES ('B16',N'Gold',N'0', 150000,'https://noithatlogic.vn/upload/8ca6f938-25bc-4321-aad6-dac837165fb6/ban-Eames-vuong-2-tang-1.jpg?w=400&h=400');
+INSERT INTO BanAn(maBan,loaiBan,tinhTrang,donGiaBan,hinhAnh)
+VALUES ('B17',N'Gold',N'0', 150000,'https://noithatlogic.vn/upload/8ca6f938-25bc-4321-aad6-dac837165fb6/ban-Eames-vuong-2-tang-1.jpg?w=400&h=400');
+INSERT INTO BanAn(maBan,loaiBan,tinhTrang,donGiaBan,hinhAnh)
+VALUES ('B18',N'Gold',N'0', 150000,'https://noithatlogic.vn/upload/8ca6f938-25bc-4321-aad6-dac837165fb6/ban-Eames-vuong-2-tang-1.jpg?w=400&h=400');
+INSERT INTO BanAn(maBan,loaiBan,tinhTrang,donGiaBan,hinhAnh)
+VALUES ('B19',N'Gold',N'0', 150000,'https://noithatlogic.vn/upload/8ca6f938-25bc-4321-aad6-dac837165fb6/ban-Eames-vuong-2-tang-1.jpg?w=400&h=400');
+INSERT INTO BanAn(maBan,loaiBan,tinhTrang,donGiaBan,hinhAnh)
+VALUES ('B20',N'Gold',N'0', 150000,'https://noithatlogic.vn/upload/8ca6f938-25bc-4321-aad6-dac837165fb6/ban-Eames-vuong-2-tang-1.jpg?w=400&h=400');
+INSERT INTO BanAn(maBan,loaiBan,tinhTrang,donGiaBan,hinhAnh)
+VALUES ('B21',N'Gold',N'0', 150000,'https://noithatlogic.vn/upload/8ca6f938-25bc-4321-aad6-dac837165fb6/ban-Eames-vuong-2-tang-1.jpg?w=400&h=400');
+INSERT INTO BanAn(maBan,loaiBan,tinhTrang,donGiaBan,hinhAnh)
+VALUES ('B22',N'Gold',N'0', 150000,'https://noithatlogic.vn/upload/8ca6f938-25bc-4321-aad6-dac837165fb6/ban-Eames-vuong-2-tang-1.jpg?w=400&h=400');
+INSERT INTO BanAn(maBan,loaiBan,tinhTrang,donGiaBan,hinhAnh)
+VALUES ('B23',N'Gold',N'0', 150000,'https://noithatlogic.vn/upload/8ca6f938-25bc-4321-aad6-dac837165fb6/ban-Eames-vuong-2-tang-1.jpg?w=400&h=400');
+INSERT INTO BanAn(maBan,loaiBan,tinhTrang,donGiaBan,hinhAnh)
+VALUES ('B24',N'Gold',N'0', 150000,'https://noithatlogic.vn/upload/8ca6f938-25bc-4321-aad6-dac837165fb6/ban-Eames-vuong-2-tang-1.jpg?w=400&h=400');
+
 -- 8. MonAn
 INSERT INTO MonAn(maMon,tenMon,donGiaMon,donViTinh,maNhom,hinhAnh)
 VALUES ('MA01',N'Cà phê đen đá',45000,'ly','NMA01','https://neomartpro.com/wp-content/uploads/2020/05/cafedenda-1-768x768.jpg');
@@ -403,7 +432,7 @@ VALUES (12,'MA01',2,'B01');
 INSERT INTO PhieuThanhToan(maPhieuYeuCau,maMon,soLuongMon,maBan)
 VALUES (13,'MA02',2,'B02');
 INSERT INTO PhieuThanhToan(maPhieuYeuCau,maMon,soLuongMon,maBan)
-VALUES (14,'MA03'2,'B03');
+VALUES (14,'MA03',2,'B03');
 INSERT INTO PhieuThanhToan(maPhieuYeuCau,maMon,soLuongMon,maBan)
 VALUES (15,'MA04',2,'B04');
 INSERT INTO PhieuThanhToan(maPhieuYeuCau,maMon,soLuongMon,maBan)
