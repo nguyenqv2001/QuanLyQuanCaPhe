@@ -12,6 +12,9 @@ namespace QuanLyQuanCaPhe
 {
     public partial class Form4 : Form
     {
+        //
+        
+        //
         DataConnection dc;
         SqlDataAdapter da;
         SqlCommand cmd;
@@ -34,6 +37,7 @@ namespace QuanLyQuanCaPhe
         {
             InitializeComponent();
             bananbll = new QuanLyBanAnBLL();
+           
         }
         public void ShowAllBANAN()
         {
@@ -386,7 +390,7 @@ namespace QuanLyQuanCaPhe
         }
 
         private void button28_Click_1(object sender, EventArgs e)
-        {
+        {           
             Form2b f2b = new Form2b();
             Hide();
             f2b.ShowDialog();

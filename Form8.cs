@@ -12,8 +12,9 @@ namespace QuanLyQuanCaPhe
 {
     public partial class Form8 : Form
     {
+        
         public Form8()
-        {
+        {           
             InitializeComponent();
         }
 
@@ -89,9 +90,10 @@ namespace QuanLyQuanCaPhe
             Hide();
             tktp.Show();
         }
-
+        // button thoat
         private void button1_Click(object sender, EventArgs e)
         {
+            
             Form2b f2b = new Form2b();
             Hide();
             f2b.ShowDialog();

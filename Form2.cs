@@ -12,6 +12,7 @@ namespace QuanLyQuanCaPhe
 {
     public partial class Form2 : Form
     {
+        
         public Form2()
         {
             InitializeComponent();
@@ -50,6 +51,21 @@ namespace QuanLyQuanCaPhe
             Form1 f1 = new Form1();
             Hide();
             f1.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

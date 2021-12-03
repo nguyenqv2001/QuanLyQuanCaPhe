@@ -12,13 +12,15 @@ using System.Data.SqlClient;
 namespace QuanLyQuanCaPhe
 {
     public partial class Form5 : Form
-    {  
+    {
+        //
+        
+        //
         DataConnection dc;
         SqlDataAdapter da;
         SqlCommand cmd;
         public Form5()
-        {
-            
+        {          
             InitializeComponent();
         }
 
@@ -51,7 +53,7 @@ namespace QuanLyQuanCaPhe
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {          
             Form2b f2b = new Form2b();
             Hide();
             f2b.ShowDialog();

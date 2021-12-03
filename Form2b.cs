@@ -12,6 +12,7 @@ namespace QuanLyQuanCaPhe
 {
     public partial class Form2b : Form
     {
+        
         public Form2b()
         {
             InitializeComponent();
@@ -78,6 +79,21 @@ namespace QuanLyQuanCaPhe
             QuanLyTaiKhoan QLTK = new QuanLyTaiKhoan();
             Hide();
             QLTK.ShowDialog();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2b_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

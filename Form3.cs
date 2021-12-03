@@ -12,13 +12,14 @@ namespace QuanLyQuanCaPhe
 {
     public partial class Form3 : Form
     {
-        //
+        // 
+        
         QuanLyThongTinMonAnBLL monanbll;
         //
         public Form3()
         {
             InitializeComponent();
-            monanbll = new QuanLyThongTinMonAnBLL();
+            monanbll = new QuanLyThongTinMonAnBLL();         
         }
 
         public void ShowAllMONAN()
@@ -29,12 +30,11 @@ namespace QuanLyQuanCaPhe
 
         // button thoat
         private void button4_Click(object sender, EventArgs e)
-        {
-                      
+        {           
             Form2b f2b = new Form2b();
             Hide();
             f2b.ShowDialog();
-              
+
         }
 
         private void btprev_Click(object sender, EventArgs e)

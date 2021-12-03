@@ -13,9 +13,11 @@ namespace QuanLyQuanCaPhe
 {
     public partial class TimKiemMonAn : Form
     {
+        
         public TimKiemMonAn()
         {
             InitializeComponent();
+            
         }
 
         MONAN monan = new MONAN();

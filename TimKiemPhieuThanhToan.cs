@@ -13,9 +13,11 @@ namespace QuanLyQuanCaPhe
 {
     public partial class TimKiemPhieuThanhToan : Form
     {
+        
         public TimKiemPhieuThanhToan()
         {
             InitializeComponent();
+            
         }
 
         HOADONCHITIET hdct = new HOADONCHITIET();

@@ -13,9 +13,11 @@ namespace QuanLyQuanCaPhe
 {
     public partial class TimKiemThucPham : Form
     {
+        
         public TimKiemThucPham()
         {
             InitializeComponent();
+            
         }
 
         THUCPHAM2 tp = new THUCPHAM2();

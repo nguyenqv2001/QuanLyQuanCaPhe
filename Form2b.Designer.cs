@@ -32,6 +32,7 @@ namespace QuanLyQuanCaPhe
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button9 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -40,11 +41,9 @@ namespace QuanLyQuanCaPhe
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -86,6 +85,17 @@ namespace QuanLyQuanCaPhe
             this.groupBox2.Size = new System.Drawing.Size(357, 647);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
+            // 
+            // button9
+            // 
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(13, 553);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(307, 70);
+            this.button9.TabIndex = 7;
+            this.button9.Text = "Quản Lý Tài Khoản";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button7
             // 
@@ -167,44 +177,37 @@ namespace QuanLyQuanCaPhe
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.button10);
             this.groupBox1.Controls.Add(this.button8);
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 9);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1429, 128);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label3
+            // button10
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 61);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 24);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Tài Khoản :";
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.Location = new System.Drawing.Point(177, 85);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(143, 37);
+            this.button10.TabIndex = 6;
+            this.button10.Text = "Thoát";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(214, 88);
+            this.button8.Location = new System.Drawing.Point(13, 85);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(143, 37);
             this.button8.TabIndex = 5;
             this.button8.Text = "Đăng xuất";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(13, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 34);
-            this.textBox1.TabIndex = 4;
             // 
             // label1
             // 
@@ -215,17 +218,6 @@ namespace QuanLyQuanCaPhe
             this.label1.Size = new System.Drawing.Size(732, 55);
             this.label1.TabIndex = 1;
             this.label1.Text = "Phần mềm quản lý quán cà phê";
-            // 
-            // button9
-            // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(13, 553);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(307, 70);
-            this.button9.TabIndex = 7;
-            this.button9.Text = "Quản Lý Tài Khoản";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // groupBox3
             // 
@@ -247,6 +239,7 @@ namespace QuanLyQuanCaPhe
             this.Controls.Add(this.groupBox1);
             this.Name = "Form2b";
             this.Text = "Form Trang chủ QL";
+            this.Load += new System.EventHandler(this.Form2b_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -271,9 +264,8 @@ namespace QuanLyQuanCaPhe
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
     }
 }

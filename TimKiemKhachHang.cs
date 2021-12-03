@@ -13,9 +13,10 @@ namespace QuanLyQuanCaPhe
 {
     public partial class TimKiemKhachHang : Form
     {
+        
         public TimKiemKhachHang()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
 
         private void TimKiemKhachHang_Load(object sender, EventArgs e)

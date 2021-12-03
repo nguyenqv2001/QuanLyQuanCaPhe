@@ -30,9 +30,8 @@ namespace QuanLyQuanCaPhe
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -50,44 +49,37 @@ namespace QuanLyQuanCaPhe
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.button5);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(14, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1429, 150);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(170, 107);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(143, 37);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "Thoát";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(211, 101);
+            this.button5.Location = new System.Drawing.Point(6, 107);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(143, 37);
             this.button5.TabIndex = 4;
             this.button5.Text = "Đăng xuất";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 75);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 24);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Tài Khoản :";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(10, 102);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 34);
-            this.textBox1.TabIndex = 3;
             // 
             // label1
             // 
@@ -195,6 +187,7 @@ namespace QuanLyQuanCaPhe
             this.Controls.Add(this.groupBox4);
             this.Name = "Form2";
             this.Text = "Form Trang chủ NV";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -207,7 +200,6 @@ namespace QuanLyQuanCaPhe
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -218,6 +210,6 @@ namespace QuanLyQuanCaPhe
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button6;
     }
 }
