@@ -5,16 +5,12 @@
                    
          
 ###  Hoang Minh Nhat 
-                       1.Dang nhap
+                       1.Dang nhap , dang ky
                        2.Trang chu gioi thieu quan
                        3.Quan Ly thong tin Food
-                  
-###  Vuong La Quoc Hoang
-           
-                       4.Quan ly ban an
-                       5.Hoa don thanh toan
-        
+                       4.Quan ly ban an                   
 ### Nguyen Quoc Viet
+                       5.Hoa don thanh toan
                        6.Quan ly nhan vien
                        7.Quan ly nhap xuat nguyen lieu
        

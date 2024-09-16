@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>QuanLyQuanCaPhe</RootNamespace>
     <AssemblyName>QuanLyQuanCaPhe</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,6 +36,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +48,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BAN.cs" />
+    <Compile Include="QuanLyBanAnBLL.cs" />
+    <Compile Include="QuanLyBanAnDAL.cs" />
+    <Compile Include="QuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QUANLYBANAN.cs" />
+    <Compile Include="QUANLYMONAN.cs" />
+    <Compile Include="QuanLyThongTinMonAnDAL.cs" />
+    <Compile Include="QuanLyThongTinMonAnBLL.cs" />
+    <Compile Include="LOGIN.cs" />
     <Compile Include="DataConnection.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -125,9 +141,84 @@
     <Compile Include="FormThucPham.Designer.cs">
       <DependentUpon>FormThucPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="HOADON.cs" />
+    <Compile Include="HOADONCHITIET.cs" />
+    <Compile Include="KHACHHANG.cs" />
+    <Compile Include="MONAN.cs" />
+    <Compile Include="MY_DB.cs" />
+    <Compile Include="NhaCungCap.cs" />
+    <Compile Include="NhaCungCapBLL.cs" />
+    <Compile Include="NhaCungCapDAL.cs" />
     <Compile Include="NhanVien.cs" />
+    <Compile Include="NHANVIEN2.cs" />
+    <Compile Include="NhanVienBLL.cs" />
+    <Compile Include="NhanVienDAL.cs" />
+    <Compile Include="NhapNguyenLieu.cs" />
+    <Compile Include="NhapNguyenLieuBLL.cs" />
+    <Compile Include="NhapNguyenLieuDAL.cs" />
+    <Compile Include="TAIKHOAN.cs" />
+    <Compile Include="TaiKhoanBLL.cs" />
+    <Compile Include="TaiKhoanDAL.cs" />
+    <Compile Include="ThongKe10KhachHangMuaNhieuNhat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe10KhachHangMuaNhieuNhat.Designer.cs">
+      <DependentUpon>ThongKe10KhachHangMuaNhieuNhat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThucPham.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaoHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaoHoaDon.Designer.cs">
+      <DependentUpon>TaoHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaoHoaDonChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaoHoaDonChiTiet.Designer.cs">
+      <DependentUpon>TaoHoaDonChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeDoanhThuTheoNgay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeDoanhThuTheoNgay.Designer.cs">
+      <DependentUpon>ThongKeDoanhThuTheoNgay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKeThucPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKeThucPham.Designer.cs">
+      <DependentUpon>ThongKeThucPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="THUCPHAM2.cs" />
+    <Compile Include="ThucPhamBLL.cs" />
+    <Compile Include="ThucPhamDAL.cs" />
+    <Compile Include="TimKiemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimKiemKhachHang.Designer.cs">
+      <DependentUpon>TimKiemKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiemMonAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimKiemMonAn.Designer.cs">
+      <DependentUpon>TimKiemMonAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiemPhieuThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimKiemPhieuThanhToan.Designer.cs">
+      <DependentUpon>TimKiemPhieuThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimKiemThucPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimKiemThucPham.Designer.cs">
+      <DependentUpon>TimKiemThucPham.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,11 +234,20 @@
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form6.resx">
       <DependentUpon>Form6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form7.resx">
       <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9.resx">
+      <DependentUpon>Form9.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNCC.resx">
       <DependentUpon>FormNCC.cs</DependentUpon>
@@ -166,7 +266,38 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="QuanLyTaiKhoan.resx">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaoHoaDon.resx">
+      <DependentUpon>TaoHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaoHoaDonChiTiet.resx">
+      <DependentUpon>TaoHoaDonChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe10KhachHangMuaNhieuNhat.resx">
+      <DependentUpon>ThongKe10KhachHangMuaNhieuNhat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeDoanhThuTheoNgay.resx">
+      <DependentUpon>ThongKeDoanhThuTheoNgay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKeThucPham.resx">
+      <DependentUpon>ThongKeThucPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiemKhachHang.resx">
+      <DependentUpon>TimKiemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiemMonAn.resx">
+      <DependentUpon>TimKiemMonAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiemPhieuThanhToan.resx">
+      <DependentUpon>TimKiemPhieuThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimKiemThucPham.resx">
+      <DependentUpon>TimKiemThucPham.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -179,6 +310,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\anhQuanCaPhe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\anhQuan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\iconquancaphe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\iconquancaphe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\anhQuan.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

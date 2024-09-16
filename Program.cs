@@ -40,7 +40,7 @@ namespace QuanLyQuanCaPhe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2b());
+            Application.Run(new Form1());
         }
     }
 }

@@ -12,22 +12,197 @@ namespace QuanLyQuanCaPhe
 {
     public partial class FormThucPham : Form
     {
+        ThucPhamBLL tpbll;
         public FormThucPham()
         {
             InitializeComponent();
+            tpbll = new ThucPhamBLL();
+        }
+        public void ShowAllTP()
+        {
+            DataTable dt = tpbll.getAllTP();
+            dataGridView1.DataSource = dt;
+        }
+        public bool CheckData()
+        {
+            // kiểm tra dữ liệu nhập trong textBox MaNV có trống không
+            if (string.IsNullOrEmpty(tbID.Text))
+            {
+                MessageBox.Show("Bạn chưa nhập Mã thực phẩm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                tbID.Focus();
+                return false;
+
+            }
+            if (string.IsNullOrEmpty(tbTen.Text))
+            {
+                MessageBox.Show("Bạn chưa nhập tên thực phẩm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                tbTen.Focus();
+                return false;
+
+            }
+            if (string.IsNullOrEmpty(tbDonvi.Text))
+            {
+                MessageBox.Show("Bạn chưa nhập đơn vị tính.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                tbDonvi.Focus();
+                return false;
+
+            }
+
+
+            if (string.IsNullOrEmpty(tbNSX.Text))
+            {
+                MessageBox.Show("Bạn chưa nhập ngày sản xuất.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                tbNSX.Focus();
+                return false;
+
+            }
+            if (string.IsNullOrEmpty(tbHSD.Text))
+            {
+                MessageBox.Show("Bạn chưa nhập hạn sử dụng.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                tbHSD.Focus();
+                return false;
+
+            }
+            if (string.IsNullOrEmpty(tbID_NCC.Text))
+            {
+                MessageBox.Show("Bạn chưa nhập mã nhà cung cấp.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                tbID_NCC.Focus();
+                return false;
+
+            }
+
+            return true;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btThem_Click_1(object sender, EventArgs e)
+        {
+            if (CheckData())
+            {
+                ThucPham tp = new ThucPham();
+
+                tp.maTP = tbID.Text;
+                tp.tenTP = tbTen.Text;
+                tp.DVT = tbDonvi.Text;
+                tp.NSX = DateTime.Parse(tbNSX.Text);
+                tp.HSD = DateTime.Parse(tbHSD.Text);
+                tp.maNCC = tbID_NCC.Text;
+
+                if (tpbll.InsertTP(tp))
+                {
+                    ShowAllTP();
+                }
+                else
+                    MessageBox.Show("Đã xảy ra lỗi , xin thử lại sau", "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            Form7 form7 = new Form7();
+            Hide();
+            form7.ShowDialog();
+        }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+            if (CheckData())
+            {
+                ThucPham tp = new ThucPham();
+
+                tp.maTP = tbID.Text;
+                tp.tenTP = tbTen.Text;
+                tp.DVT = tbDonvi.Text;
+                tp.NSX = DateTime.Parse(tbNSX.Text);
+                tp.HSD = DateTime.Parse(tbHSD.Text);
+                tp.maNCC = tbID_NCC.Text;
+
+                if (tpbll.UpdateTP(tp))
+                {
+                    ShowAllTP();
+                }
+                else
+                    MessageBox.Show("Đã xảy ra lỗi , xin thử lại sau", "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+
+        private void btPrev_Click(object sender, EventArgs e)
+        {
+            int rno = dataGridView1.CurrentCell.RowIndex;
+
+            if (rno > 0)
+            {
+                rno--;
+                tbID.Text = dataGridView1.Rows[rno].Cells["maThucPham"].Value.ToString();
+                tbTen.Text = dataGridView1.Rows[rno].Cells["tenThucPham"].Value.ToString();
+                tbDonvi.Text = dataGridView1.Rows[rno].Cells["donViTinh"].Value.ToString();
+                tbNSX.Text = dataGridView1.Rows[rno].Cells["NSX"].Value.ToString();
+                tbHSD.Text = dataGridView1.Rows[rno].Cells["HSD"].Value.ToString();
+                tbID_NCC.Text = dataGridView1.Rows[rno].Cells["maNCC"].Value.ToString();
+                dataGridView1.CurrentCell = dataGridView1[0, rno];
+            }
+            else
+            { MessageBox.Show("thực phẩm đầu"); }
+        }
+
+        private void btNext_Click(object sender, EventArgs e)
+        {
+            int rno = dataGridView1.CurrentCell.RowIndex;
+            if (rno < dataGridView1.RowCount - 2)
+            {
+                rno++;
+
+                tbID.Text = dataGridView1.Rows[rno].Cells["maThucPham"].Value.ToString();
+                tbTen.Text = dataGridView1.Rows[rno].Cells["tenThucPham"].Value.ToString();
+                tbDonvi.Text = dataGridView1.Rows[rno].Cells["donViTinh"].Value.ToString();
+                tbNSX.Text = dataGridView1.Rows[rno].Cells["NSX"].Value.ToString();
+                tbHSD.Text = dataGridView1.Rows[rno].Cells["HSD"].Value.ToString();
+                tbID_NCC.Text = dataGridView1.Rows[rno].Cells["maNCC"].Value.ToString();
+                dataGridView1.CurrentCell = dataGridView1[0, rno];
+            }
+            else
+            { MessageBox.Show("thực phẩm cuối"); }
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có muốn xóa không ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                ThucPham tp = new ThucPham();
+                tp.maTP = tbID.Text;
+                if (tpbll.DeleteTP(tp))
+                {
+                    tbID.Text = tbTen.Text = tbNSX.Text = tbHSD.Text = tbDonvi.Text = tbID_NCC.Text = "";
+                    ShowAllTP();
+                }
+                else
+                    MessageBox.Show("Đã xảy ra lỗi , xin thử lại sau", "Thông báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+
+        private void btReset_Click(object sender, EventArgs e)
         {
             tbID.Text = tbTen.Text = tbNSX.Text = tbHSD.Text = tbDonvi.Text = tbID_NCC.Text = "";
             tbID.Focus();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void FormThucPham_Load(object sender, EventArgs e)
         {
-            Form7 form7 = new Form7();
-            Hide();
-            form7.ShowDialog();
+            ShowAllTP();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = e.RowIndex;
+            if (index >= 0)
+            {
+                tbID.Text = dataGridView1.Rows[index].Cells["maThucPham"].Value.ToString();
+                tbTen.Text = dataGridView1.Rows[index].Cells["tenThucPham"].Value.ToString();
+                tbDonvi.Text = dataGridView1.Rows[index].Cells["donViTinh"].Value.ToString();
+                tbNSX.Text = dataGridView1.Rows[index].Cells["NSX"].Value.ToString();
+                tbHSD.Text = dataGridView1.Rows[index].Cells["HSD"].Value.ToString();
+                tbID_NCC.Text = dataGridView1.Rows[index].Cells["maNCC"].Value.ToString();
+
+            }
         }
     }
 }

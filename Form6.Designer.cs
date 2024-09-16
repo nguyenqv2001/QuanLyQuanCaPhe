@@ -113,11 +113,11 @@ namespace QuanLyQuanCaPhe
             // 
             // btThoat
             // 
-            this.btThoat.BackColor = System.Drawing.Color.OliveDrab;
+            this.btThoat.BackColor = System.Drawing.Color.Tomato;
             this.btThoat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btThoat.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btThoat.ForeColor = System.Drawing.Color.Transparent;
-            this.btThoat.Location = new System.Drawing.Point(880, 251);
+            this.btThoat.ForeColor = System.Drawing.Color.Black;
+            this.btThoat.Location = new System.Drawing.Point(1023, 16);
             this.btThoat.Name = "btThoat";
             this.btThoat.Size = new System.Drawing.Size(107, 38);
             this.btThoat.TabIndex = 139;
@@ -131,7 +131,7 @@ namespace QuanLyQuanCaPhe
             this.btXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btXoa.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btXoa.ForeColor = System.Drawing.Color.Transparent;
-            this.btXoa.Location = new System.Drawing.Point(945, 120);
+            this.btXoa.Location = new System.Drawing.Point(939, 146);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(107, 38);
             this.btXoa.TabIndex = 138;
@@ -145,7 +145,7 @@ namespace QuanLyQuanCaPhe
             this.btSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btSua.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btSua.ForeColor = System.Drawing.Color.Transparent;
-            this.btSua.Location = new System.Drawing.Point(814, 187);
+            this.btSua.Location = new System.Drawing.Point(808, 213);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(107, 38);
             this.btSua.TabIndex = 137;
@@ -159,7 +159,7 @@ namespace QuanLyQuanCaPhe
             this.btReset.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btReset.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btReset.ForeColor = System.Drawing.Color.Transparent;
-            this.btReset.Location = new System.Drawing.Point(945, 187);
+            this.btReset.Location = new System.Drawing.Point(939, 213);
             this.btReset.Name = "btReset";
             this.btReset.Size = new System.Drawing.Size(107, 38);
             this.btReset.TabIndex = 136;
@@ -173,7 +173,7 @@ namespace QuanLyQuanCaPhe
             this.btThem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btThem.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btThem.ForeColor = System.Drawing.Color.Transparent;
-            this.btThem.Location = new System.Drawing.Point(814, 120);
+            this.btThem.Location = new System.Drawing.Point(808, 146);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(107, 38);
             this.btThem.TabIndex = 135;
@@ -224,6 +224,7 @@ namespace QuanLyQuanCaPhe
             this.picNV.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picNV.TabIndex = 129;
             this.picNV.TabStop = false;
+            this.picNV.Click += new System.EventHandler(this.picNV_Click);
             // 
             // label7
             // 
@@ -290,7 +291,7 @@ namespace QuanLyQuanCaPhe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1142, 634);
+            this.ClientSize = new System.Drawing.Size(1142, 764);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tbLink);
             this.Controls.Add(this.dataGridView1);
@@ -314,7 +315,7 @@ namespace QuanLyQuanCaPhe
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form6";
-            this.Text = "QUẢN LÝ NHÂN VIÊN";
+            this.Text = "Form quản lý nhân viên";
             this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNV)).EndInit();
